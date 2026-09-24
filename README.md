@@ -8,8 +8,8 @@ its design, the evaluation it supports, and the views it carries — and answers
 them by parsing the files rather than by reading the documentation. Every table
 and figure in the accompanying paper comes out of a single execution of it.
 
-> **Capture Identity as a Confounder in UAV Intrusion Detection Benchmarks:
-> A Structural Audit of Five Public Corpora**
+> **Capture Identity as a Confounder in Intrusion Detection Benchmarks:
+> A Structural Audit of Six Public Corpora**
 > Ho Myung Kim, Department of AI Software, Kyungwoon University.
 > Under review. DOI to follow.
 
@@ -29,7 +29,7 @@ comparable: 0 is chance, 1 names every capture.
 |---|---:|---:|---|---|
 | Hassler et al. (T-ITS 2024) | 5 | 1 | 0.918 ± 0.002 | **undefined** |
 | MAVLink (GUIDE) | 8 | 2 | 0.712 ± 0.006 | 8 folds, unstable |
-| HAI 21.03 (ICS) | 8 | 5 | see `runs/audit/` | 8 folds |
+| HAI 21.03 (ICS) | 8 | 5 | 0.959 ± 0.001 | 8 folds |
 | UAVCAN 2022 | 10 | 10 | 0.134 ± 0.003 | 10 folds |
 | UAVCAN 2026 (LUMI) | 10 | 10 | 0.093 ± 0.004 | 10 folds |
 | SHADOW-GCS | 35 | 14 | 0.588 ± 0.005 | 35 folds |
@@ -112,7 +112,11 @@ release/                    a corrected, byte-faithful repackaging of one corpus
   splits_corpora/           reference splits for every corpus audited
 
 scripts/                    per-corpus investigations and the figure scripts
-runs/audit/                 the JSON and PNG outputs the paper cites
+runs/audit/                 the JSON and image outputs the paper cites
+  checklist.json            the twenty-one checks on all six corpora
+  split_cost.json           four split policies, accuracy and balanced
+  fingerprint_variance.json the index with its spread over twenty-four runs
+  fig_fingerprint.*         Figure 2, and graphical_abstract.* alongside it
 ```
 
 ## Two things the tool does on purpose

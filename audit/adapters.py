@@ -423,8 +423,19 @@ def hai(dir_: str, max_records: int = 60000) -> Records:
                 "per_capture": per_file,
                 "benign_only_captures": benign_only,
                 "spellings": sorted(set(y.tolist())),
+                # a plain read of these files keeps every row; both figures are
+                # counted over the whole corpus, before the subsample, so that
+                # the ratio the check forms is 1.0 rather than a comparison
+                # between a raw count and a sampled one
                 "kept_under_standard_read": lines,
-                "attack_type_per_record": False},
+                "total_records": lines,
+                "benign_class": "normal",
+                # the release carries a binary attack flag and three columns
+                # naming which process was affected, but not which of the
+                # documented attack scenarios a row belongs to, and 21.03
+                # ships no separate label file from which it could be joined
+                "attack_type_per_record": False,
+                "attack_mass_without_type": 1.0},
     )
 
 

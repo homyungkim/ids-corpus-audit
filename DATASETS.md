@@ -1,45 +1,52 @@
-# Where the data comes from, and what is actually in it
+# Where each corpus comes from, and what is actually in it
 
-Every path below was checked against the live source. Two of the three public
-corpora need a free account; none of them can be fetched without a browser
-except the first.
+Six corpora are audited. Every path below was checked against the live source on
+the date of the run recorded in `runs/audit/`. Nothing here is required to read
+the results — `runs/audit/` already holds them — but everything here is required
+to reproduce them.
+
+The audit tool takes one flag per corpus and skips anything you do not pass, so a
+partial set still produces its own columns of the paper's tables.
+
+| # | Corpus | Flag | Account needed |
+|---|---|---|---|
+| 1 | Hassler et al., cyber-physical UAV | `--hassler` | no |
+| 2 | MAVLink message identifiers (GUIDE) | `--mavlink` | no |
+| 3 | UAVCAN attack dataset 2022 | `--uavcan` | free HCRL registration |
+| 4 | UAVCAN attack dataset 2026 (LUMI) | `--lumi` | free HCRL registration |
+| 5 | SHADOW-GCS | `--shadow` | free HCRL registration |
+| 6 | HAI 21.03 (industrial control) | `--hai` | no |
 
 ---
 
-## 1. Hassler et al. — cyber-physical corpus (primary)
+## 1. Hassler et al. — cyber-physical UAV corpus
 
 The only public UAV corpus with both a network view and a flight view from one
-testbed.
-
-**Download (no account needed):**
+testbed, and the corpus the paper's documentary finding concerns.
 
 ```bash
 mkdir -p data/hassler
 curl -L -o data/hassler/Dataset_T-ITS.csv \
   https://raw.githubusercontent.com/uamughal/UAVs-Dataset-Under-Normal-and-Cyberattacks/main/Dataset_T-ITS.csv
-# 6,148,114 bytes, 54,784 lines including headers
+# 6,148,114 bytes, MD5 de00684e4d9f838b9bc330bacc3487f1
 ```
 
 Repository: <https://github.com/uamughal/UAVs-Dataset-Under-Normal-and-Cyberattacks>
-(MIT licence). There is also an IEEE DataPort mirror, doi `10.21227/6f22-py65`,
-but it **requires a paid DataPort subscription** and holds the same file. Use
-GitHub.
+(MIT licence). An IEEE DataPort mirror exists under doi `10.21227/6f22-py65` but
+requires a paid subscription and holds the same file; use GitHub.
 
 **Cite:** S. C. Hassler, U. A. Mughal and M. Ismail, "Cyber-physical intrusion
 detection system for unmanned aerial vehicles," *IEEE Trans. Intell. Transp.
 Syst.*, vol. 25, no. 6, pp. 6106–6117, Jun. 2024, doi: 10.1109/TITS.2023.3339728.
-The authors' own BibTeX in the repository README gives a different, incorrect
-DOI — use the one above.
+The BibTeX in the repository README gives a different, incorrect DOI.
 
-### What the file really contains
+### It is not one table
 
-**It is not one table.** It is five separate exports concatenated and padded to
-38 comma-separated fields. Reading it with a single header — which is what a
-plain `pd.read_csv` does — silently produces wrong data: the label for every
-physical row lands in the column named `ip.flags`, and the labels for evil twin
-and FDI disappear entirely (21,679 of 54,783 rows come back with a null class).
-
-Verified structure:
+It is five exports concatenated and padded to 38 comma-separated fields. Reading
+it with a single header — what a plain `pd.read_csv` does — silently produces
+wrong data: the label for every physical row lands in the column named
+`ip.flags`, and the labels for evil twin and false data injection disappear
+entirely. 21,672 of 54,774 data rows come back with a null class.
 
 | Segment | Class | Cyber rows | Cyber features | Physical rows | Physical features |
 |---|---|---|---|---|---|
@@ -49,204 +56,87 @@ Verified structure:
 | 3 | evil twin | 5,683 | **34** | 5,473 | **21** |
 | 4 | FDI | 3,473 | **34** | 807 | **31** |
 
-Segments 0–2 carry the 37 + 16 schema the paper describes. Segments 3 and 4 were
-captured with different instrumentation: their cyber header has a different
-column order and adds `wlan_radio.signal_strength`, `Noise level`, `SNR`,
-`preamble`; their physical view is the DJI Tello SDK field set
-(`mid, x, y, z, pitch, roll, yaw, vgx, vgy, vgz, templ, temph, tof, h, bat,
-baro, time, agx, agy, agz`), and FDI adds `mpitch, mroll, myaw, est_x, est_y,
-cntl_x, cntl_y, residual1..4`.
+Segments 0–2 carry the 37 + 16 schema the releasing paper describes. Segments 3
+and 4 were captured with different instrumentation: their cyber header has a
+different column order and adds `wlan_radio.signal_strength`, `Noise level`,
+`SNR`, `preamble`; their physical view is the DJI Tello SDK field set, and FDI
+adds `mpitch, mroll, myaw, est_x, est_y, cntl_x, cntl_y, residual1..4`. Each
+segment opens with its own `timestamp_c,…` header and carries a second header row
+starting `timestamp_p` — or `mid` in the last segment — separating its cyber
+block from its physical block.
 
-Each segment begins with its own `timestamp_c,...` header and contains a second
-header row starting `timestamp_p` (or `mid` in the last segment) that separates
-its cyber block from its physical block.
+`release/` in this repository holds a corrected repackaging: ten files, one per
+block, each with the header that block actually has, verified cell by cell
+against the source. Use `release/uav_cpids.py` rather than writing a reader.
 
-**Check your copy before using it:**
+## 2. MAVLink message identifiers (GUIDE)
 
-```bash
-python -c "from clids import hassler; print(hassler.describe('data/hassler/Dataset_T-ITS.csv'))"
-```
-
-`clids/hassler.py` handles all of this. Two policies:
-
-- `schema: strict` — the three classes sharing the documented 37 + 16 schema.
-  35 cyber and 15 physical features after dropping timestamps and frame
-  numbers; 33,102 rows; **two attack families**, so only two leave-one-attack-out folds.
-- `schema: common` — all five classes on the intersection of normalized feature
-  names. 12 cyber and 12 physical features; 42,258 rows; **four attack
-  families**. The physical intersection is
-  `barometer, battery, distance, flight_time, height, pitch, roll, temperature,
-  x_speed, y_speed, yaw, z_speed`.
-
-Whichever you pick, say so in the paper and give the feature counts. A reviewer
-who has opened this file will know the difference.
-
-### The size problem — read this before planning experiments
-
-The corpus has 9,425 benign rows. At the paper's window length that is not
-enough benign data to fit a tail:
-
-| T | stride | total windows | benign windows | benign for calibration at 25 % |
-|---|---|---|---|---|
-| 16 | 8 | 5,258 | 1,173 | 293 |
-| 32 | 16 | 2,618 | 584 | 146 |
-| 64 | 32 | 1,296 | 289 | 72 |
-| 128 | 64 | 636 | 142 | 35 |
-| 128 | 12 (90 % overlap) | 3,043 | 678 | 169 |
-
-A 1 % threshold needs on the order of 2,000 benign windows for the estimate to
-be stable, and 0.1 % needs roughly ten times that — `TailFit.required_calibration_windows`
-computes the exact figure from equation (14) for your data. **The Hassler corpus
-is short by about an order of magnitude.** Pushing the overlap to 90 % inflates
-the window count without adding information, and correlated excesses break the
-independence the tail fit assumes, so it does not fix the problem.
-
-Consequences for the plan: this corpus supports the fusion comparison, but the
-benign mass for the calibration study has to come from somewhere else. The
-synchronized corpus below is the way out, and it is now load-bearing rather than
-a supplement.
-
----
-
-## 2. Whelan et al. — UAV Attack Dataset (real-hardware telemetry)
-
-PX4 flight logs from a Pixhawk 4 on a Holybro S500, under live GNSS spoofing
-generated with a HackRF, live jamming, and MAVLink ping-flood DoS.
-
-- Page: <https://ieee-dataport.org/open-access/uav-attack-dataset>
-- DOI: `10.21227/00dg-0d12`
-- **Open access**, but a free IEEE account is required to download. There is no
-  direct link; sign in and click `UAVAttackData.zip` (683.88 MB).
+Sequences of MAVLink message identifiers from hardware-in-the-loop missions under
+heartbeat, ping and request flooding. The class is carried in the file name, not
+in the row.
 
 ```bash
-mkdir -p data/uav_attack
-# unzip the downloaded archive here; .ulg and .csv are both handled
-unzip ~/Downloads/UAVAttackData.zip -d data/uav_attack/
-pip install pyulog     # only if the archive contains .ulg rather than .csv
+git clone https://github.com/hcrlab-knu/GUIDE     # path may change; see the paper
+# pass the directory holding the raw sequence files
 ```
 
-**Cite:** J. Whelan, T. Sangarapillai, O. Minawi, A. Almehmadi and K. El-Khatib,
-"Novelty-based intrusion detection of sensor attacks on unmanned aerial
-vehicles," in *Proc. 16th ACM Symp. QoS Security Wireless Mobile Netw.
-(Q2SWinet)*, Alicante, Spain, Nov. 2020, pp. 23–28, doi: 10.1145/3416013.3426446.
+**Cite:** J. D. Yoo, H. Kim and H. K. Kim, "GUIDE: GAN-based UAV IDS
+enhancement," *Comput. Secur.*, vol. 147, 104073, 2024,
+doi: 10.1016/j.cose.2024.104073.
 
-This corpus has **no packet capture**. It exercises the physical branch and the
-degraded-modality path, not fusion. `clids/data.py:load_px4` derives the family
-from the file name; check the mapping in `data.px4.family_from_filename` against
-the archive's actual layout after unzipping.
+**What the adapter reads.** One capture per file. The label comes from the file
+name, so no per-record attack type exists and check B4 fails. Two captures are
+labelled normal, which is what makes the leave-one-capture-out result on this
+corpus unstable: removing one of them removes half the class.
 
----
+## 3–4. UAVCAN attack datasets, 2022 and 2026 (LUMI)
 
-## 3. ISOT drone corpus (cross-testbed generalization)
+DroneCAN bus traffic across ten scenarios combining flooding, fuzzing and replay.
+Both releases interleave normal and attack frames inside every capture, which is
+why they score lowest on the fingerprint index and fail the benign-only-capture
+check.
 
-Network captures from a DJI Tello testbed — a different airframe in a different
-environment, which is what makes it useful as an unseen-environment test.
+Obtain from the Hacking and Countermeasure Research Lab, Korea University:
+<https://ocslab.hksecurity.net/Datasets/uavcan-attack-dataset> and
+<https://ocslab.hksecurity.net/Datasets/uavcan-attack-dataset-2026-lumi>.
+Registration is free; the files cannot be fetched without a browser.
 
-- Page: <https://onlineacademiccommunity.uvic.ca/isot/2024/12/05/drone-datasets/>
-- A direct Google Drive link is on that page ("Click here to download the ISOT
-  Drone Anomaly Detection Dataset"). Over 23 GB of PCAP plus 1.3 GB of extracted
-  CSV features; take the CSV unless you intend to re-extract.
-- Scripts: <https://github.com/isot-lab/Drone-Anomaly-Detection-Dataset-and-Unsupervised-Machine-Learning>
-- No licence is stated. Contact `traore at ece.uvic.ca` before redistributing
-  anything derived from it.
+**Cite:** D. Kim, Y. Song, Y. Kwon, H. Kim, J. D. Yoo and H. K. Kim, "UAVCAN
+dataset description," arXiv:2212.09268, 2022; and Y. Song and H. K. Kim, "UAVCAN
+attack dataset 2026 (LUMI)," HCRL, Korea University, 2026.
 
-```bash
-mkdir -p data/isot
-# place the extracted feature CSV here, then point the config at it
-```
+**What the adapter reads.** The 2022 release ships `.bin` files with no header
+row, no commas, and SocketCAN `candump` text with a label word prepended; the
+data field holds one hexadecimal byte per unit of the length code, so the
+whitespace-separated field count varies between six and thirteen across rows. A
+comma-separated read does not fail — it returns a single column of strings — so
+the format defect is invisible unless the file is opened. The 2026 release is
+comma-separated with one consistent header across all ten files.
 
-**Cite:** Z. Chen, I. Traoré, M. Mamun and S. Saad, "Drone anomaly detection:
-Dataset and unsupervised machine learning," in *Foundations and Practice of
-Security* (LNCS 15532). Cham: Springer, 2025, pp. 186–201,
-doi: 10.1007/978-3-031-87499-4_12.
+## 5. SHADOW-GCS
 
----
+MAVLink sessions under a spoofed ground control station, crossed over transport
+path, vehicle state and class: 35 captures, 641,015 packets, three to ten
+captures in every cell of the design, fourteen of them benign throughout. This is
+the UAV corpus that satisfies the design requirement the paper argues for.
 
-## 4. Synchronized cyber-physical corpus (generated here)
+<https://ocslab.hksecurity.net/Datasets/shadow-gcs>, or IEEE DataPort
+doi `10.21227/czt3-y366`.
 
-No public corpus records network traffic and flight telemetry from the same
-sessions with one clock. Given the size problem in §1, generating one is not
-optional for this paper — it is where the benign calibration mass comes from.
+**Cite:** J. Y. Lee and H. K. Kim, "SHADOW-GCS attack dataset," IEEE DataPort,
+2026, doi: 10.21227/czt3-y366.
 
-The setup couples a flight simulator to a network simulator over a shared time
-base:
-
-- ArduPilot SITL — <https://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html>
-- ns-3 — <https://www.nsnam.org/releases/>
-- A published harness that already bridges the two over ZeroMQ and emits
-  synchronized PCAP and telemetry CSV, with eight scripted attack scenarios:
-  <https://github.com/Wh02m1/UAVLnQ>
-
-Plan on several hours of benign flight. At T = 128 with 50 % overlap and a
-50 Hz telemetry rate, one hour of benign flight yields roughly 2,800 windows, so
-four to six hours puts the calibration set comfortably past what equation (14)
-requires at α = 10⁻³.
-
-Release the generated corpus under CC BY on Zenodo or IEEE DataPort with the
-paper. Given what §1 documents about the state of the only existing paired
-release, a clean synchronized corpus is likely to be the most cited thing in
-this work.
-
----
-
-## 5. Optional, for pretraining only
-
-- **CICIoT2023** — <https://www.unb.ca/cic/datasets/iotdataset-2023.html>, public.
-  Cite Neto et al., *Sensors* 23(13):5941, 2023, doi: 10.3390/s23135941.
-- **Edge-IIoTset** — IEEE DataPort doi `10.21227/mbc1-1h68` (subscription); the
-  author also mirrors it on Kaggle. Cite Ferrag et al., *IEEE Access* 10:40281–40306, 2022.
-- **ALFA** — <http://theairlab.org/alfa-dataset>. Flight telemetry with
-  **faults, not attacks**. Usable to pretrain the telemetry encoder; calling it
-  an attack dataset would be wrong.
-
----
-
-## Two names that appear in the literature and should not be used
-
-- **"Drone-CyberAttack" / "Drone-CyberAttack-2024" does not exist.** No
-  repository, no release, no source paper. If a draft cites it, the citation is
-  fabricated.
-- **"UAV-IDS-2020" is not an attack dataset.** It is the UAV *presence
-  detection* corpus of Alipour-Fanid et al. over encrypted Wi-Fi (UCI ID 564,
-  doi `10.24432/C56P6X`), and it contains no attack classes at all. Several
-  published papers treat it as an intrusion-detection benchmark; they are wrong,
-  and repeating the error is an easy thing for a reviewer to catch.
-
----
-
-## Checklist before the first training run
-
-```bash
-# 1. structure of the primary corpus, checked against the README
-python -c "from clids import hassler; print(hassler.describe('data/hassler/Dataset_T-ITS.csv'))"
-
-# 2. windows, class counts and the corpus fingerprint
-python -m clids.cli prepare -c configs/hassler.yaml
-
-# 3. how much benign data the tail fit actually needs for your data
-python - <<'EOF'
-from clids import evt
-import numpy as np
-# after a first training run, substitute real benign scores here
-scores = np.random.gamma(2.0, 1.0, 5000)
-f = evt.fit_tail(scores, percentile=95.0)
-for a in (1e-2, 1e-3):
-    print(f"alpha={a:g}: need {f.required_calibration_windows(a)} benign windows")
-EOF
-```
-
-If step 3 reports more windows than step 2 produced, the calibration study
-cannot be run on that corpus alone. That is the situation with the Hassler
-corpus today, and §4 is the answer to it.
-
----
+**What the adapter reads.** Eleven shallow features over windows of 64 packets —
+length and inter-arrival statistics, packet rate, byte rate — with no payload, no
+addresses and no ports. The shallowness is deliberate: it makes the fingerprint
+measurement a lower bound rather than an artefact of a rich representation.
 
 ## 6. HAI 21.03 — HIL-based augmented ICS security dataset
 
-Included so that the audit is not confined to one application domain, and so
-that the design requirement the paper argues for can be tested against a corpus
-built in a different field. Eight captures from one testbed at one row per
-second: three recorded with no attack running, five carrying attacks.
+Included so the audit is not confined to one application domain, and so the
+design requirement can be tested against a corpus built in a different field.
+Eight captures from one testbed at one row per second: three with no attack
+running and five carrying attacks, 1,323,608 rows in total.
 
 **Download.** The official repository serves the newer releases through Git LFS,
 and that budget is presently exhausted, so `git lfs pull` fails with
@@ -259,18 +149,39 @@ cd hai/hai-21.03 && gunzip -k *.csv.gz
 ```
 
 If the clone stops on an LFS error for a newer release, the 21.03 files are
-already on disk and usable; the checkout failure concerns `hai-22.04` and
-`hai-23.05` only. A Kaggle copy of the same release is published by the same
-group at <https://www.kaggle.com/datasets/icsdataset/hai-security-dataset>.
+already on disk and usable; the failure concerns `hai-22.04` and `hai-23.05`
+only. A Kaggle copy of the same release is published by the same group at
+<https://www.kaggle.com/datasets/icsdataset/hai-security-dataset>.
+
+**Cite:** H.-K. Shin, W. Lee, J.-H. Yun and B.-G. Min, "Two ICS security datasets
+and anomaly detection contest on the HIL-based augmented ICS testbed," in *Proc.
+Cyber Security Experimentation and Test Workshop (CSET)*, 2021, pp. 36–40,
+doi: 10.1145/3474718.3474719.
 
 **What the adapter reads.** 79 process points per row; `time` and the four
-`attack*` columns are excluded from the features. The overall `attack` column
-is the label, and the file is the capture, which is the granularity the release
+`attack*` columns are excluded from the features. The overall `attack` column is
+the label and the file is the capture, which is the granularity the release
 itself distinguishes. Attack rows are 0.7 % of the corpus, so accuracy is
 saturated by the majority class and `measure_split_cost.py` reports balanced
-accuracy alongside it.
+accuracy alongside it. HAI is also the only corpus in the set whose release
+states how to split for evaluation, so it is the one column where check D3
+passes.
 
-**Cite:** H.-K. Shin, W. Lee, J.-H. Yun and B.-G. Min, "Two ICS security
-datasets and anomaly detection contest on the HIL-based augmented ICS testbed,"
-in *Proc. Cyber Security Experimentation and Test Workshop (CSET)*, 2021,
-pp. 36–40, doi: 10.1145/3474718.3474719.
+---
+
+## After downloading
+
+```bash
+python3 audit/run_checklist.py \
+    --hassler data/hassler/Dataset_T-ITS.csv \
+    --mavlink /path/GUIDE/data/raw \
+    --uavcan  /path/uavcan_extracted \
+    --lumi    "/path/UAVCAN Attack Dataset 2026 (LUMI)" \
+    --shadow  /path/SHADOW-GCS \
+    --hai     /path/hai/hai-21.03 \
+    --out runs/audit/checklist.json
+```
+
+Six corpora in one process peaks above 7 GB of memory. On a machine with less,
+run one corpus per process and merge the resulting objects; each writes its own
+top-level key, so merging is a dictionary update.

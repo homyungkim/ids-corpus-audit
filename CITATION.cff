@@ -19,7 +19,7 @@ keywords:
   - reproducibility
 preferred-citation:
   type: article
-  title: "Capture Identity as a Confounder in UAV Intrusion Detection Benchmarks: A Structural Audit of Five Public Corpora"
+  title: "Capture Identity as a Confounder in Intrusion Detection Benchmarks: A Structural Audit of Six Public Corpora"
   authors:
     - family-names: Kim
       given-names: Ho Myung
