@@ -98,7 +98,7 @@ def figure(rows: list[dict], reading: str, path: Path) -> None:
     import matplotlib.pyplot as plt
 
     plt.rcParams.update({"font.size": 9, "axes.linewidth": 0.7,
-                         "savefig.dpi": 300, "figure.facecolor": "white"})
+                         "savefig.dpi": 600, "figure.facecolor": "white"})
     fig, ax = plt.subplots(figsize=(6.0, 3.6))
 
     lo, hi = min(REPORTED.values()), max(REPORTED.values())
