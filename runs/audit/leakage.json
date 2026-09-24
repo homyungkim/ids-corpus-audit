@@ -1,0 +1,2287 @@
+{
+  "granularity": [
+    1,
+    5,
+    20,
+    100,
+    500,
+    1500,
+    3000
+  ],
+  "reported": {
+    "Gharami & Moni 2025": 0.9805,
+    "Attaullah et al. 2026": 0.9874,
+    "Khanfora et al. (quoting)": 0.9613,
+    "Panda & Guo 2025": 1.0
+  },
+  "runs": [
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 33102,
+      "accuracy": 0.993152754002618,
+      "macro_f1": 0.993582277876009
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 33102,
+      "accuracy": 0.8554022757023462,
+      "macro_f1": 0.8600337127811221
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 33102,
+      "accuracy": 0.9891249622394522,
+      "macro_f1": 0.9894784621748158
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 33102,
+      "accuracy": 0.9933541435907763,
+      "macro_f1": 0.9936678624806761
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 33102,
+      "accuracy": 0.853186990232605,
+      "macro_f1": 0.8571846185868894
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 33102,
+      "accuracy": 0.9887221830631356,
+      "macro_f1": 0.9887883393204143
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 33102,
+      "accuracy": 0.9923471956499849,
+      "macro_f1": 0.9927812399964808
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 33102,
+      "accuracy": 0.8461383546470648,
+      "macro_f1": 0.8509903260726835
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 33102,
+      "accuracy": 0.9832846641828618,
+      "macro_f1": 0.9837440756492684
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 33102,
+      "accuracy": 0.9933541435907763,
+      "macro_f1": 0.9937825876319861
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 33102,
+      "accuracy": 0.8465411338233814,
+      "macro_f1": 0.8516790693334372
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 33102,
+      "accuracy": 0.9926492800322223,
+      "macro_f1": 0.9928621901735767
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 33102,
+      "accuracy": 0.9923471956499849,
+      "macro_f1": 0.9927501373757966
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 33102,
+      "accuracy": 0.8465411338233814,
+      "macro_f1": 0.8516820546444528
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 33102,
+      "accuracy": 0.9909374685328769,
+      "macro_f1": 0.9911446214794593
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 33102,
+      "accuracy": 0.9922465008559057,
+      "macro_f1": 0.9926022120516177
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 33102,
+      "accuracy": 0.8459369650589065,
+      "macro_f1": 0.8503351320421743
+    },
+    {
+      "reading": "naive-3",
+      "g": 1,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 33102,
+      "accuracy": 0.9884200986808982,
+      "macro_f1": 0.9888134788724482
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 6622,
+      "accuracy": 0.9947638707078844,
+      "macro_f1": 0.9950245491794522
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 6622,
+      "accuracy": 0.8536904642030007,
+      "macro_f1": 0.8585667382488467
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 6622,
+      "accuracy": 0.9930520592085389,
+      "macro_f1": 0.9931765906548057
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 6622,
+      "accuracy": 0.9948645655019636,
+      "macro_f1": 0.9951793449713157
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 6622,
+      "accuracy": 0.847749471352331,
+      "macro_f1": 0.8532299491883372
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 6622,
+      "accuracy": 0.9919444164736683,
+      "macro_f1": 0.9919960783526355
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 6622,
+      "accuracy": 0.9942603967374887,
+      "macro_f1": 0.9945452432629068
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 6622,
+      "accuracy": 0.8498640620279931,
+      "macro_f1": 0.8543080813632636
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 6622,
+      "accuracy": 0.9914409425032725,
+      "macro_f1": 0.9916221891087433
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 6622,
+      "accuracy": 0.9908404630095622,
+      "macro_f1": 0.9912103267202861
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 6622,
+      "accuracy": 0.8459989934574735,
+      "macro_f1": 0.850476722849932
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 6622,
+      "accuracy": 0.9881227981882235,
+      "macro_f1": 0.9883195512395514
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 6622,
+      "accuracy": 0.9921489682939104,
+      "macro_f1": 0.9924203634063304
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 6622,
+      "accuracy": 0.8536487166582788,
+      "macro_f1": 0.8578790229092134
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 6622,
+      "accuracy": 0.987820835430297,
+      "macro_f1": 0.9880016469839776
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 6622,
+      "accuracy": 0.9920483140412683,
+      "macro_f1": 0.992547965164217
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 6622,
+      "accuracy": 0.8483140412682436,
+      "macro_f1": 0.8543466631726376
+    },
+    {
+      "reading": "naive-3",
+      "g": 5,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 6622,
+      "accuracy": 0.9874182184197282,
+      "macro_f1": 0.9876515556329887
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 1657,
+      "accuracy": 0.9908551904331223,
+      "macro_f1": 0.9913268642257909
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 1657,
+      "accuracy": 0.851773691086323,
+      "macro_f1": 0.8577283993806847
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 1657,
+      "accuracy": 0.989850266304894,
+      "macro_f1": 0.9902572318219148
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 1657,
+      "accuracy": 0.9901517435433624,
+      "macro_f1": 0.9904687266714692
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 1657,
+      "accuracy": 0.8439352828861421,
+      "macro_f1": 0.8482979846081352
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 1657,
+      "accuracy": 0.980303487086725,
+      "macro_f1": 0.9807035188945067
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 1657,
+      "accuracy": 0.9899457068168108,
+      "macro_f1": 0.990285387532856
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 1657,
+      "accuracy": 0.8561230645485622,
+      "macro_f1": 0.8605106095393692
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 1657,
+      "accuracy": 0.9898451638849789,
+      "macro_f1": 0.990085051824689
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 1657,
+      "accuracy": 0.9839975845410628,
+      "macro_f1": 0.984333136250361
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 1657,
+      "accuracy": 0.8583937198067633,
+      "macro_f1": 0.8618034101409925
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 1657,
+      "accuracy": 0.9802737520128825,
+      "macro_f1": 0.9803743705024122
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 1657,
+      "accuracy": 0.9891468194151342,
+      "macro_f1": 0.9895959635717518
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 1657,
+      "accuracy": 0.8486584262888152,
+      "macro_f1": 0.8539197054019111
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 1657,
+      "accuracy": 0.9787961008943825,
+      "macro_f1": 0.9794954148727587
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 1657,
+      "accuracy": 0.9885381057711643,
+      "macro_f1": 0.988683629681816
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 1657,
+      "accuracy": 0.8457671425698773,
+      "macro_f1": 0.8516114083481955
+    },
+    {
+      "reading": "naive-3",
+      "g": 20,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 1657,
+      "accuracy": 0.9836115021114016,
+      "macro_f1": 0.9838474642370804
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 333,
+      "accuracy": 0.9866747425802543,
+      "macro_f1": 0.9868833851275051
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 333,
+      "accuracy": 0.8653341409246921,
+      "macro_f1": 0.8663443464958193
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 333,
+      "accuracy": 0.9760751059963658,
+      "macro_f1": 0.9766263038877095
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 333,
+      "accuracy": 0.976916067631872,
+      "macro_f1": 0.9762461540176873
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 333,
+      "accuracy": 0.8139111066113193,
+      "macro_f1": 0.8171188916322579
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 333,
+      "accuracy": 0.9749924066011947,
+      "macro_f1": 0.9750247655697208
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 333,
+      "accuracy": 0.9764231738035265,
+      "macro_f1": 0.976648685182472
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 333,
+      "accuracy": 0.8334508816120907,
+      "macro_f1": 0.8388889057493305
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 333,
+      "accuracy": 0.9805541561712846,
+      "macro_f1": 0.9808325004553268
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 333,
+      "accuracy": 0.9800421221542474,
+      "macro_f1": 0.9806547230188181
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 333,
+      "accuracy": 0.8388326145822886,
+      "macro_f1": 0.8393222028883636
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 333,
+      "accuracy": 0.9388225854979441,
+      "macro_f1": 0.9401421081896825
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 333,
+      "accuracy": 0.9675002531132935,
+      "macro_f1": 0.9677500650732872
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 333,
+      "accuracy": 0.8298066214437583,
+      "macro_f1": 0.830886593053842
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 333,
+      "accuracy": 0.9728662549357092,
+      "macro_f1": 0.9730670393608597
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 333,
+      "accuracy": 0.9951544518473653,
+      "macro_f1": 0.9952118982426515
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 333,
+      "accuracy": 0.8474661821118514,
+      "macro_f1": 0.8480557247728998
+    },
+    {
+      "reading": "naive-3",
+      "g": 100,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 333,
+      "accuracy": 0.9875832828588734,
+      "macro_f1": 0.9877591806944097
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 68,
+      "accuracy": 0.9834099540275835,
+      "macro_f1": 0.9702376044354937
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 68,
+      "accuracy": 0.7314611233260044,
+      "macro_f1": 0.7558734214092843
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 68,
+      "accuracy": 0.9088546871876874,
+      "macro_f1": 0.9077332249672393
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 68,
+      "accuracy": 0.9807619047619047,
+      "macro_f1": 0.9439705304872454
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 68,
+      "accuracy": 0.7035238095238096,
+      "macro_f1": 0.6718372725429748
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 68,
+      "accuracy": 0.8854285714285715,
+      "macro_f1": 0.8789845252541318
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 68,
+      "accuracy": 0.9357142857142857,
+      "macro_f1": 0.9238332355845963
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 68,
+      "accuracy": 0.7329523809523809,
+      "macro_f1": 0.7389978634544225
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 68,
+      "accuracy": 0.919047619047619,
+      "macro_f1": 0.9156392130252708
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 68,
+      "accuracy": 0.94287680660702,
+      "macro_f1": 0.9372373630036924
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 68,
+      "accuracy": 0.8310883885556976,
+      "macro_f1": 0.8209887689240037
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 68,
+      "accuracy": 0.9289155441942778,
+      "macro_f1": 0.9224422588944122
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 68,
+      "accuracy": 0.9142514491305217,
+      "macro_f1": 0.9057596611838239
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 68,
+      "accuracy": 0.9202478512892265,
+      "macro_f1": 0.910672468923388
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 68,
+      "accuracy": 0.9403357985208874,
+      "macro_f1": 0.9346818894562734
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 68,
+      "accuracy": 0.9622857142857143,
+      "macro_f1": 0.9648701691597489
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 68,
+      "accuracy": 0.7943809523809524,
+      "macro_f1": 0.7780938453953258
+    },
+    {
+      "reading": "naive-3",
+      "g": 500,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 68,
+      "accuracy": 0.9223809523809524,
+      "macro_f1": 0.9300584953316715
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 24,
+      "accuracy": 0.7923749631522059,
+      "macro_f1": 0.8324873057959131
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 24,
+      "accuracy": 0.6349611869902722,
+      "macro_f1": 0.6861305973066306
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 24,
+      "accuracy": 0.7708558514296944,
+      "macro_f1": 0.7982522955881598
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 24,
+      "accuracy": 0.7809099477336989,
+      "macro_f1": 0.7866509132645825
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 24,
+      "accuracy": 0.7166481021334933,
+      "macro_f1": 0.7029003510459786
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 24,
+      "accuracy": 0.7851083883129123,
+      "macro_f1": 0.7906136378657384
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 24,
+      "accuracy": 0.7096073990184976,
+      "macro_f1": 0.7140743636189543
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 24,
+      "accuracy": 0.5410532276330691,
+      "macro_f1": 0.5454500654757525
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 24,
+      "accuracy": 0.6481691204228011,
+      "macro_f1": 0.6500201269644706
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 24,
+      "accuracy": 0.8243509553594379,
+      "macro_f1": 0.8386981375556356
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 24,
+      "accuracy": 0.7629166309656413,
+      "macro_f1": 0.7463834457689121
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 24,
+      "accuracy": 0.8010453260217634,
+      "macro_f1": 0.7933226953399922
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 24,
+      "accuracy": 0.7760183066361556,
+      "macro_f1": 0.7495125474496058
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 24,
+      "accuracy": 0.6585812356979405,
+      "macro_f1": 0.5374122171223811
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 24,
+      "accuracy": 0.7790389016018306,
+      "macro_f1": 0.7530278029027638
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 24,
+      "accuracy": 0.9561203122025509,
+      "macro_f1": 0.9435340966723293
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 24,
+      "accuracy": 0.5385494003426613,
+      "macro_f1": 0.5906488838158875
+    },
+    {
+      "reading": "naive-3",
+      "g": 1500,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 24,
+      "accuracy": 0.8695983247667999,
+      "macro_f1": 0.873061272240781
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 13,
+      "accuracy": 0.794,
+      "macro_f1": 0.5519619879838683
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 13,
+      "accuracy": 0.72025,
+      "macro_f1": 0.4815457595742219
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 13,
+      "accuracy": 0.8266666666666667,
+      "macro_f1": 0.5684118879674173
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 13,
+      "accuracy": 0.7842970822281167,
+      "macro_f1": 0.7833162968243359
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 13,
+      "accuracy": 0.7374005305039788,
+      "macro_f1": 0.723646747447705
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 13,
+      "accuracy": 0.7837665782493368,
+      "macro_f1": 0.7871454697584221
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 13,
+      "accuracy": 0.8793333333333333,
+      "macro_f1": 0.8419554521317348
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 13,
+      "accuracy": 0.5859166666666666,
+      "macro_f1": 0.576312334372087
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 13,
+      "accuracy": 0.8605833333333334,
+      "macro_f1": 0.8215824069142131
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 13,
+      "accuracy": 0.8848333333333334,
+      "macro_f1": 0.6235947140821518
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 13,
+      "accuracy": 0.8856666666666667,
+      "macro_f1": 0.6225101416603624
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 13,
+      "accuracy": 0.85825,
+      "macro_f1": 0.6116622954526428
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 13,
+      "accuracy": 0.9841393251438345,
+      "macro_f1": 0.6902749435615934
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 13,
+      "accuracy": 0.8735810915876224,
+      "macro_f1": 0.5648031508932089
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 13,
+      "accuracy": 0.9864717773285647,
+      "macro_f1": 0.6713414825095473
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 13,
+      "accuracy": 0.711250107103076,
+      "macro_f1": 0.5516039473442245
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 13,
+      "accuracy": 0.6657527204181304,
+      "macro_f1": 0.5100540975984115
+    },
+    {
+      "reading": "naive-3",
+      "g": 3000,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 13,
+      "accuracy": 0.6826321651957844,
+      "macro_f1": 0.5397983791280643
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 42258,
+      "accuracy": 0.9937687332386812,
+      "macro_f1": 0.995506478830025
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 42258,
+      "accuracy": 0.7184887206183941,
+      "macro_f1": 0.7814855312385927
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 42258,
+      "accuracy": 0.8097491717936584,
+      "macro_f1": 0.8560301573638108
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 42258,
+      "accuracy": 0.9943997475942578,
+      "macro_f1": 0.9958197674054986
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 42258,
+      "accuracy": 0.7235368354630067,
+      "macro_f1": 0.7837225618918305
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 42258,
+      "accuracy": 0.7909764947152548,
+      "macro_f1": 0.843364166645021
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 42258,
+      "accuracy": 0.9932165956775517,
+      "macro_f1": 0.9949476971067319
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 42258,
+      "accuracy": 0.7182520902350529,
+      "macro_f1": 0.7802269107951644
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 42258,
+      "accuracy": 0.80619971604354,
+      "macro_f1": 0.8543197734388741
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 42258,
+      "accuracy": 0.9950307619498343,
+      "macro_f1": 0.9962855315812706
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 42258,
+      "accuracy": 0.7243256034074775,
+      "macro_f1": 0.7843498043454614
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 42258,
+      "accuracy": 0.8038334122101278,
+      "macro_f1": 0.8487488769001293
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 42258,
+      "accuracy": 0.9943997475942578,
+      "macro_f1": 0.9959385102816377
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 42258,
+      "accuracy": 0.723773465846348,
+      "macro_f1": 0.7859650846529515
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 42258,
+      "accuracy": 0.807303991165799,
+      "macro_f1": 0.8558955941188084
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 42258,
+      "accuracy": 0.99353210285534,
+      "macro_f1": 0.9953188026302124
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 42258,
+      "accuracy": 0.720539517274018,
+      "macro_f1": 0.7824764971942285
+    },
+    {
+      "reading": "correct-5",
+      "g": 1,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 42258,
+      "accuracy": 0.7903454803596782,
+      "macro_f1": 0.8390902123278267
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 8454,
+      "accuracy": 0.993847124714049,
+      "macro_f1": 0.9954536965507434
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 8454,
+      "accuracy": 0.7236727932476138,
+      "macro_f1": 0.7849724088179135
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 8454,
+      "accuracy": 0.8050800662617339,
+      "macro_f1": 0.8453857148477738
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 8454,
+      "accuracy": 0.9945587887390585,
+      "macro_f1": 0.9960067965223767
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 8454,
+      "accuracy": 0.7094866335462503,
+      "macro_f1": 0.7743654818710333
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 8454,
+      "accuracy": 0.7866098888100308,
+      "macro_f1": 0.8371570562786381
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 8454,
+      "accuracy": 0.9919590067008277,
+      "macro_f1": 0.9939934228061755
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 8454,
+      "accuracy": 0.7148600709499409,
+      "macro_f1": 0.7783168802403392
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 8454,
+      "accuracy": 0.7942451714623571,
+      "macro_f1": 0.8412919712671194
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 8454,
+      "accuracy": 0.9934537424087073,
+      "macro_f1": 0.9951409566457089
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 8454,
+      "accuracy": 0.7159081946525752,
+      "macro_f1": 0.7789332633135274
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 8454,
+      "accuracy": 0.7957252149223125,
+      "macro_f1": 0.8417154673508028
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 8454,
+      "accuracy": 0.9930626724477729,
+      "macro_f1": 0.9947795595898498
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 8454,
+      "accuracy": 0.7145447378793851,
+      "macro_f1": 0.7733514490799492
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 8454,
+      "accuracy": 0.7890421757981868,
+      "macro_f1": 0.8376304242391598
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 8454,
+      "accuracy": 0.9929827327919262,
+      "macro_f1": 0.9949163744459575
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 8454,
+      "accuracy": 0.7191516202791137,
+      "macro_f1": 0.7810233278635874
+    },
+    {
+      "reading": "correct-5",
+      "g": 5,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 8454,
+      "accuracy": 0.7968934794606954,
+      "macro_f1": 0.8485162711408885
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 2116,
+      "accuracy": 0.9890326652990374,
+      "macro_f1": 0.9917171667039881
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 2116,
+      "accuracy": 0.7191888906422598,
+      "macro_f1": 0.7829845065897232
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 2116,
+      "accuracy": 0.7787596654568407,
+      "macro_f1": 0.8324348220355429
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 2116,
+      "accuracy": 0.9948818897637796,
+      "macro_f1": 0.9960561038505447
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 2116,
+      "accuracy": 0.7251968503937007,
+      "macro_f1": 0.7842020829953409
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 2116,
+      "accuracy": 0.7854330708661418,
+      "macro_f1": 0.8333142455997959
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 2116,
+      "accuracy": 0.989746825459421,
+      "macro_f1": 0.9921689556817126
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 2116,
+      "accuracy": 0.7219023582301444,
+      "macro_f1": 0.7860863866477837
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 2116,
+      "accuracy": 0.799826484738544,
+      "macro_f1": 0.8505272479998632
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 2116,
+      "accuracy": 0.9929722046746684,
+      "macro_f1": 0.9946013364668564
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 2116,
+      "accuracy": 0.715255843335439,
+      "macro_f1": 0.7718358651987709
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 2116,
+      "accuracy": 0.7862444725205306,
+      "macro_f1": 0.8365137751259972
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 2116,
+      "accuracy": 0.9939288811795317,
+      "macro_f1": 0.9953140101259643
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 2116,
+      "accuracy": 0.7196246944729165,
+      "macro_f1": 0.780342814549611
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 2116,
+      "accuracy": 0.7979973192462351,
+      "macro_f1": 0.8446002352263651
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 2116,
+      "accuracy": 0.9911692817156824,
+      "macro_f1": 0.9932615764102707
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 2116,
+      "accuracy": 0.7057478514547032,
+      "macro_f1": 0.7716923064258097
+    },
+    {
+      "reading": "correct-5",
+      "g": 20,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 2116,
+      "accuracy": 0.7899550579515887,
+      "macro_f1": 0.8442340467261621
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 425,
+      "accuracy": 0.9906018006634023,
+      "macro_f1": 0.9925827589668332
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 425,
+      "accuracy": 0.7432475122413521,
+      "macro_f1": 0.794226327682855
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 425,
+      "accuracy": 0.8089559311325225,
+      "macro_f1": 0.8503799541457656
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 425,
+      "accuracy": 0.994140625,
+      "macro_f1": 0.9950852886067821
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 425,
+      "accuracy": 0.722109375,
+      "macro_f1": 0.7746779150451006
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 425,
+      "accuracy": 0.749921875,
+      "macro_f1": 0.8048567350802938
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 425,
+      "accuracy": 0.9956456337582139,
+      "macro_f1": 0.9957590036232155
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 425,
+      "accuracy": 0.7027155411289684,
+      "macro_f1": 0.7671124062064097
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 425,
+      "accuracy": 0.7419840076003483,
+      "macro_f1": 0.8080663062876688
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 425,
+      "accuracy": 0.9885544057698338,
+      "macro_f1": 0.9907344804589366
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 425,
+      "accuracy": 0.6803073063656319,
+      "macro_f1": 0.7648192393990163
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 425,
+      "accuracy": 0.7213860144245845,
+      "macro_f1": 0.7995134522690882
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 425,
+      "accuracy": 0.9865612648221344,
+      "macro_f1": 0.9893864045175935
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 425,
+      "accuracy": 0.7447430830039525,
+      "macro_f1": 0.7945452722952948
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 425,
+      "accuracy": 0.7713833992094862,
+      "macro_f1": 0.8177930203460481
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 425,
+      "accuracy": 0.978046875,
+      "macro_f1": 0.9839310041781475
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 425,
+      "accuracy": 0.665703125,
+      "macro_f1": 0.7537222820685975
+    },
+    {
+      "reading": "correct-5",
+      "g": 100,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 425,
+      "accuracy": 0.71640625,
+      "macro_f1": 0.7902654448577879
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 87,
+      "accuracy": 0.9809038344491783,
+      "macro_f1": 0.9814957274060274
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 87,
+      "accuracy": 0.7014607425441266,
+      "macro_f1": 0.7731795039954165
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 87,
+      "accuracy": 0.6717894096165551,
+      "macro_f1": 0.7473099646405071
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 87,
+      "accuracy": 0.9347407350335156,
+      "macro_f1": 0.9612983427594262
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 87,
+      "accuracy": 0.5970413745280838,
+      "macro_f1": 0.6990320870239021
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 87,
+      "accuracy": 0.6498959858232529,
+      "macro_f1": 0.7566471732633901
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 87,
+      "accuracy": 0.9247763932421069,
+      "macro_f1": 0.9332629665880582
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 87,
+      "accuracy": 0.7243330020640624,
+      "macro_f1": 0.7691682315528826
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 87,
+      "accuracy": 0.7799862395841296,
+      "macro_f1": 0.8193464205891807
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 87,
+      "accuracy": 0.9650930339843149,
+      "macro_f1": 0.9731978993662255
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 87,
+      "accuracy": 0.7601107181300938,
+      "macro_f1": 0.7944661736750884
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 87,
+      "accuracy": 0.7475780409041981,
+      "macro_f1": 0.7899087756144159
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 87,
+      "accuracy": 0.9676856557687932,
+      "macro_f1": 0.975920594097102
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 87,
+      "accuracy": 0.7295759690510506,
+      "macro_f1": 0.784236552547269
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 87,
+      "accuracy": 0.6791322157323826,
+      "macro_f1": 0.7619115505217279
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 87,
+      "accuracy": 0.9876243261711336,
+      "macro_f1": 0.9922324211106963
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 87,
+      "accuracy": 0.6108875559942297,
+      "macro_f1": 0.7232050126765859
+    },
+    {
+      "reading": "correct-5",
+      "g": 500,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 87,
+      "accuracy": 0.5569053222989903,
+      "macro_f1": 0.7179945021061009
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 31,
+      "accuracy": 0.9981044810068996,
+      "macro_f1": 0.9973901758998697
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 31,
+      "accuracy": 0.7068769429069679,
+      "macro_f1": 0.7497034196437308
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 31,
+      "accuracy": 0.7553264083706118,
+      "macro_f1": 0.7890044478353482
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 31,
+      "accuracy": 0.7285616801880355,
+      "macro_f1": 0.7402343363939505
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 31,
+      "accuracy": 0.4280840094017742,
+      "macro_f1": 0.4732974315664671
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 31,
+      "accuracy": 0.4201228296307529,
+      "macro_f1": 0.47086285644510245
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 31,
+      "accuracy": 0.9170666666666667,
+      "macro_f1": 0.9237808030288907
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 31,
+      "accuracy": 0.6804,
+      "macro_f1": 0.713017169258037
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 31,
+      "accuracy": 0.6688,
+      "macro_f1": 0.7162820691469312
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 31,
+      "accuracy": 0.8635223631043611,
+      "macro_f1": 0.6800240726181799
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 31,
+      "accuracy": 0.5189494217639682,
+      "macro_f1": 0.5911837043182795
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 31,
+      "accuracy": 0.5438902048209558,
+      "macro_f1": 0.4974660162491634
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 31,
+      "accuracy": 0.7214411247803163,
+      "macro_f1": 0.7924098256853856
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 31,
+      "accuracy": 0.3311364967779731,
+      "macro_f1": 0.5567994204901324
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 31,
+      "accuracy": 0.4625805506736965,
+      "macro_f1": 0.6617297922484766
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 31,
+      "accuracy": 0.9180233514224634,
+      "macro_f1": 0.8807116835644699
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 31,
+      "accuracy": 0.7033382667324454,
+      "macro_f1": 0.6195342682912521
+    },
+    {
+      "reading": "correct-5",
+      "g": 1500,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 31,
+      "accuracy": 0.6739023186975827,
+      "macro_f1": 0.6143185316836428
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 0,
+      "model": "RandomForest",
+      "n_groups": 17,
+      "accuracy": 0.8153333333333334,
+      "macro_f1": 0.6765338522249366
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 0,
+      "model": "LogReg",
+      "n_groups": 17,
+      "accuracy": 0.5787222222222222,
+      "macro_f1": 0.59466267470584
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 0,
+      "model": "MLP",
+      "n_groups": 17,
+      "accuracy": 0.5606666666666666,
+      "macro_f1": 0.49462636012126265
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 1,
+      "model": "RandomForest",
+      "n_groups": 17,
+      "accuracy": 0.6632220455749868,
+      "macro_f1": 0.5258584618681218
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 1,
+      "model": "LogReg",
+      "n_groups": 17,
+      "accuracy": 0.6475225225225225,
+      "macro_f1": 0.6529823683582037
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 1,
+      "model": "MLP",
+      "n_groups": 17,
+      "accuracy": 0.6454689984101749,
+      "macro_f1": 0.5415159099850149
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 2,
+      "model": "RandomForest",
+      "n_groups": 17,
+      "accuracy": 0.8821494650470598,
+      "macro_f1": 0.8556382412989955
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 2,
+      "model": "LogReg",
+      "n_groups": 17,
+      "accuracy": 0.5431582334486365,
+      "macro_f1": 0.5528328998732898
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 2,
+      "model": "MLP",
+      "n_groups": 17,
+      "accuracy": 0.6343817874668168,
+      "macro_f1": 0.45317332475681094
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 3,
+      "model": "RandomForest",
+      "n_groups": 17,
+      "accuracy": 0.8159438861536387,
+      "macro_f1": 0.750510469720296
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 3,
+      "model": "LogReg",
+      "n_groups": 17,
+      "accuracy": 0.3944155931746139,
+      "macro_f1": 0.5609499457676429
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 3,
+      "model": "MLP",
+      "n_groups": 17,
+      "accuracy": 0.3907735887232751,
+      "macro_f1": 0.5110560419543766
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 4,
+      "model": "RandomForest",
+      "n_groups": 17,
+      "accuracy": 0.9179902755267423,
+      "macro_f1": 0.7358942826072277
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 4,
+      "model": "LogReg",
+      "n_groups": 17,
+      "accuracy": 0.5810048622366288,
+      "macro_f1": 0.6028190665435812
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 4,
+      "model": "MLP",
+      "n_groups": 17,
+      "accuracy": 0.6030470016207455,
+      "macro_f1": 0.6283382286320347
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 5,
+      "model": "RandomForest",
+      "n_groups": 17,
+      "accuracy": 0.8586570154462613,
+      "macro_f1": 0.878572537523019
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 5,
+      "model": "LogReg",
+      "n_groups": 17,
+      "accuracy": 0.56065404252569,
+      "macro_f1": 0.6090918186537628
+    },
+    {
+      "reading": "correct-5",
+      "g": 3000,
+      "seed": 5,
+      "model": "MLP",
+      "n_groups": 17,
+      "accuracy": 0.6082207716667744,
+      "macro_f1": 0.6881459051382479
+    }
+  ]
+}

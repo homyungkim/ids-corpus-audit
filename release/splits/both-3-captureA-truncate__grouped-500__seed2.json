@@ -1,0 +1,18 @@
+{
+ "policy": "grouped-500",
+ "reading": "both-3-captureA-truncate",
+ "load_kwargs": {
+  "view": "both",
+  "capture": "A",
+  "pair": "truncate"
+ },
+ "block_rows": 500,
+ "test_size": 0.3,
+ "seed": 2,
+ "test_groups": [
+  0,
+  2,
+  7,
+  10
+ ]
+}

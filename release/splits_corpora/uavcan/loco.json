@@ -1,0 +1,97 @@
+{
+ "policy": "loco",
+ "corpus": "uavcan",
+ "basis": "every class spans at least 10 captures",
+ "folds": [
+  {
+   "held_out_capture": "scenario-01",
+   "usable": true,
+   "n_test": 6149,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "scenario-02",
+   "usable": true,
+   "n_test": 3901,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "scenario-03",
+   "usable": true,
+   "n_test": 5723,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "scenario-04",
+   "usable": true,
+   "n_test": 3942,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "scenario-05",
+   "usable": true,
+   "n_test": 5330,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "scenario-06",
+   "usable": true,
+   "n_test": 6997,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "scenario-07",
+   "usable": true,
+   "n_test": 6975,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "scenario-08",
+   "usable": true,
+   "n_test": 7987,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "scenario-09",
+   "usable": true,
+   "n_test": 6812,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "scenario-10",
+   "usable": true,
+   "n_test": 6184,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  }
+ ]
+}

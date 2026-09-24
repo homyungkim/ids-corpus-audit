@@ -1,0 +1,76 @@
+{
+  "test_size": 0.3,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "policies": {
+    "grouped-3000": "whole stretches of ~3000 consecutive rows held out; report this one",
+    "grouped-500": "middle setting, for comparison",
+    "random-row": "row-level shuffle; what most published results used. A test row's neighbours are in training."
+  },
+  "readings": [
+    {
+      "name": "cyber-5",
+      "load_kwargs": {
+        "view": "cyber"
+      },
+      "rows": 42258,
+      "classes": {
+        "benign": 9425,
+        "dos": 11671,
+        "evil_twin": 5683,
+        "fdi": 3473,
+        "replay": 12006
+      },
+      "n_groups_3000": 17
+    },
+    {
+      "name": "cyber-3-captureA",
+      "load_kwargs": {
+        "view": "cyber",
+        "capture": "A"
+      },
+      "rows": 33102,
+      "classes": {
+        "benign": 9425,
+        "dos": 11671,
+        "replay": 12006
+      },
+      "n_groups_3000": 13
+    },
+    {
+      "name": "both-3-captureA-stretch",
+      "load_kwargs": {
+        "view": "both",
+        "capture": "A",
+        "pair": "stretch"
+      },
+      "rows": 33102,
+      "classes": {
+        "benign": 9425,
+        "dos": 11671,
+        "replay": 12006
+      },
+      "n_groups_3000": 13
+    },
+    {
+      "name": "both-3-captureA-truncate",
+      "load_kwargs": {
+        "view": "both",
+        "capture": "A",
+        "pair": "truncate"
+      },
+      "rows": 6236,
+      "classes": {
+        "benign": 4290,
+        "dos": 973,
+        "replay": 973
+      },
+      "n_groups_3000": 4
+    }
+  ]
+}

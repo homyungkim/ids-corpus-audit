@@ -1,0 +1,33 @@
+{
+ "policy": "grouped-500",
+ "reading": "cyber-3-captureA",
+ "load_kwargs": {
+  "view": "cyber",
+  "capture": "A"
+ },
+ "block_rows": 500,
+ "test_size": 0.3,
+ "seed": 4,
+ "test_groups": [
+  0,
+  3,
+  7,
+  11,
+  12,
+  14,
+  18,
+  27,
+  33,
+  34,
+  38,
+  39,
+  43,
+  44,
+  46,
+  48,
+  60,
+  62,
+  65,
+  67
+ ]
+}

@@ -1,0 +1,539 @@
+{
+  "stretch": [
+    {
+      "class": "benign",
+      "cyber": 9425,
+      "physical": 4290,
+      "stretch": 2.2,
+      "synthesised_share": 0.545
+    },
+    {
+      "class": "DoS",
+      "cyber": 11671,
+      "physical": 973,
+      "stretch": 12.0,
+      "synthesised_share": 0.917
+    },
+    {
+      "class": "Replay",
+      "cyber": 12006,
+      "physical": 973,
+      "stretch": 12.3,
+      "synthesised_share": 0.919
+    }
+  ],
+  "runs": [
+    {
+      "arm": "cyber",
+      "model": "RandomForest",
+      "accuracy": 0.486211247296323,
+      "macro_f1": 0.49057868273275035,
+      "n_features": 36,
+      "seed": 0
+    },
+    {
+      "arm": "cyber",
+      "model": "LogReg",
+      "accuracy": 0.5299206921413122,
+      "macro_f1": 0.49291464744971075,
+      "n_features": 36,
+      "seed": 0
+    },
+    {
+      "arm": "cyber",
+      "model": "MLP",
+      "accuracy": 0.45538932948810384,
+      "macro_f1": 0.47242053835886316,
+      "n_features": 36,
+      "seed": 0
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "RandomForest",
+      "accuracy": 0.9459264599855803,
+      "macro_f1": 0.9373836316780281,
+      "n_features": 51,
+      "seed": 0
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "LogReg",
+      "accuracy": 0.856705118961788,
+      "macro_f1": 0.8286245007415189,
+      "n_features": 51,
+      "seed": 0
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "MLP",
+      "accuracy": 0.8043439077144917,
+      "macro_f1": 0.7235883179168905,
+      "n_features": 51,
+      "seed": 0
+    },
+    {
+      "arm": "null: order",
+      "model": "RandomForest",
+      "accuracy": 0.9975666906993511,
+      "macro_f1": 0.9969313783111632,
+      "n_features": 51,
+      "seed": 0
+    },
+    {
+      "arm": "null: order",
+      "model": "LogReg",
+      "accuracy": 0.9459264599855803,
+      "macro_f1": 0.9276994671622226,
+      "n_features": 51,
+      "seed": 0
+    },
+    {
+      "arm": "null: order",
+      "model": "MLP",
+      "accuracy": 0.9644917087238645,
+      "macro_f1": 0.9514957525594889,
+      "n_features": 51,
+      "seed": 0
+    },
+    {
+      "arm": "null: class",
+      "model": "RandomForest",
+      "accuracy": 0.9129416005767844,
+      "macro_f1": 0.9044445090048443,
+      "n_features": 51,
+      "seed": 0
+    },
+    {
+      "arm": "null: class",
+      "model": "LogReg",
+      "accuracy": 0.8034426820475847,
+      "macro_f1": 0.80315138730344,
+      "n_features": 51,
+      "seed": 0
+    },
+    {
+      "arm": "null: class",
+      "model": "MLP",
+      "accuracy": 0.790465032444124,
+      "macro_f1": 0.7905438088213819,
+      "n_features": 51,
+      "seed": 0
+    },
+    {
+      "arm": "cyber",
+      "model": "RandomForest",
+      "accuracy": 0.536,
+      "macro_f1": 0.5379292678711435,
+      "n_features": 36,
+      "seed": 1
+    },
+    {
+      "arm": "cyber",
+      "model": "LogReg",
+      "accuracy": 0.5435833333333333,
+      "macro_f1": 0.5328721374677934,
+      "n_features": 36,
+      "seed": 1
+    },
+    {
+      "arm": "cyber",
+      "model": "MLP",
+      "accuracy": 0.5075833333333334,
+      "macro_f1": 0.5122689311824482,
+      "n_features": 36,
+      "seed": 1
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "RandomForest",
+      "accuracy": 0.9383333333333334,
+      "macro_f1": 0.9380952369819665,
+      "n_features": 51,
+      "seed": 1
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "LogReg",
+      "accuracy": 0.9569166666666666,
+      "macro_f1": 0.9567602805695015,
+      "n_features": 51,
+      "seed": 1
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "MLP",
+      "accuracy": 0.7081666666666667,
+      "macro_f1": 0.6897512066590307,
+      "n_features": 51,
+      "seed": 1
+    },
+    {
+      "arm": "null: order",
+      "model": "RandomForest",
+      "accuracy": 0.9913333333333333,
+      "macro_f1": 0.991334107457765,
+      "n_features": 51,
+      "seed": 1
+    },
+    {
+      "arm": "null: order",
+      "model": "LogReg",
+      "accuracy": 0.9530833333333333,
+      "macro_f1": 0.9530537696917692,
+      "n_features": 51,
+      "seed": 1
+    },
+    {
+      "arm": "null: order",
+      "model": "MLP",
+      "accuracy": 0.976,
+      "macro_f1": 0.9760065791893533,
+      "n_features": 51,
+      "seed": 1
+    },
+    {
+      "arm": "null: class",
+      "model": "RandomForest",
+      "accuracy": 0.8653333333333333,
+      "macro_f1": 0.8595918216246999,
+      "n_features": 51,
+      "seed": 1
+    },
+    {
+      "arm": "null: class",
+      "model": "LogReg",
+      "accuracy": 0.9835833333333334,
+      "macro_f1": 0.983578086275306,
+      "n_features": 51,
+      "seed": 1
+    },
+    {
+      "arm": "null: class",
+      "model": "MLP",
+      "accuracy": 0.9744166666666667,
+      "macro_f1": 0.9743767865888153,
+      "n_features": 51,
+      "seed": 1
+    },
+    {
+      "arm": "cyber",
+      "model": "RandomForest",
+      "accuracy": 0.5697548666186013,
+      "macro_f1": 0.5788782192085494,
+      "n_features": 36,
+      "seed": 2
+    },
+    {
+      "arm": "cyber",
+      "model": "LogReg",
+      "accuracy": 0.44169069935111754,
+      "macro_f1": 0.4417729388112576,
+      "n_features": 36,
+      "seed": 2
+    },
+    {
+      "arm": "cyber",
+      "model": "MLP",
+      "accuracy": 0.5401946647440519,
+      "macro_f1": 0.5535420984728364,
+      "n_features": 36,
+      "seed": 2
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "RandomForest",
+      "accuracy": 0.6283345349675559,
+      "macro_f1": 0.6486647496034005,
+      "n_features": 51,
+      "seed": 2
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "LogReg",
+      "accuracy": 0.760183850036049,
+      "macro_f1": 0.7595117014412432,
+      "n_features": 51,
+      "seed": 2
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "MLP",
+      "accuracy": 0.9023071377072819,
+      "macro_f1": 0.8833213563981349,
+      "n_features": 51,
+      "seed": 2
+    },
+    {
+      "arm": "null: order",
+      "model": "RandomForest",
+      "accuracy": 0.9972963229992791,
+      "macro_f1": 0.9966281194181112,
+      "n_features": 51,
+      "seed": 2
+    },
+    {
+      "arm": "null: order",
+      "model": "LogReg",
+      "accuracy": 0.9549387166546504,
+      "macro_f1": 0.9380212967444628,
+      "n_features": 51,
+      "seed": 2
+    },
+    {
+      "arm": "null: order",
+      "model": "MLP",
+      "accuracy": 0.9621485219899063,
+      "macro_f1": 0.9490747629623321,
+      "n_features": 51,
+      "seed": 2
+    },
+    {
+      "arm": "null: class",
+      "model": "RandomForest",
+      "accuracy": 0.9504325883201153,
+      "macro_f1": 0.9458787090288873,
+      "n_features": 51,
+      "seed": 2
+    },
+    {
+      "arm": "null: class",
+      "model": "LogReg",
+      "accuracy": 0.764689978370584,
+      "macro_f1": 0.7675122724663647,
+      "n_features": 51,
+      "seed": 2
+    },
+    {
+      "arm": "null: class",
+      "model": "MLP",
+      "accuracy": 0.70232516222062,
+      "macro_f1": 0.7045708772637904,
+      "n_features": 51,
+      "seed": 2
+    },
+    {
+      "arm": "cyber",
+      "model": "RandomForest",
+      "accuracy": 0.33426695842450765,
+      "macro_f1": 0.2825567416617803,
+      "n_features": 36,
+      "seed": 3
+    },
+    {
+      "arm": "cyber",
+      "model": "LogReg",
+      "accuracy": 0.37295404814004374,
+      "macro_f1": 0.2948146413116387,
+      "n_features": 36,
+      "seed": 3
+    },
+    {
+      "arm": "cyber",
+      "model": "MLP",
+      "accuracy": 0.3459080962800875,
+      "macro_f1": 0.29060272626350486,
+      "n_features": 36,
+      "seed": 3
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "RandomForest",
+      "accuracy": 0.9414442013129103,
+      "macro_f1": 0.6407351391356886,
+      "n_features": 51,
+      "seed": 3
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "LogReg",
+      "accuracy": 0.7733041575492341,
+      "macro_f1": 0.5591557131080277,
+      "n_features": 51,
+      "seed": 3
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "MLP",
+      "accuracy": 0.66582056892779,
+      "macro_f1": 0.47444132938638434,
+      "n_features": 51,
+      "seed": 3
+    },
+    {
+      "arm": "null: order",
+      "model": "RandomForest",
+      "accuracy": 0.9678774617067833,
+      "macro_f1": 0.647957109556024,
+      "n_features": 51,
+      "seed": 3
+    },
+    {
+      "arm": "null: order",
+      "model": "LogReg",
+      "accuracy": 0.9198249452954048,
+      "macro_f1": 0.6244992705449008,
+      "n_features": 51,
+      "seed": 3
+    },
+    {
+      "arm": "null: order",
+      "model": "MLP",
+      "accuracy": 0.9157986870897156,
+      "macro_f1": 0.6208466875841413,
+      "n_features": 51,
+      "seed": 3
+    },
+    {
+      "arm": "null: class",
+      "model": "RandomForest",
+      "accuracy": 0.852253829321663,
+      "macro_f1": 0.5969749041914558,
+      "n_features": 51,
+      "seed": 3
+    },
+    {
+      "arm": "null: class",
+      "model": "LogReg",
+      "accuracy": 0.6313347921225383,
+      "macro_f1": 0.504464064305865,
+      "n_features": 51,
+      "seed": 3
+    },
+    {
+      "arm": "null: class",
+      "model": "MLP",
+      "accuracy": 0.6780743982494529,
+      "macro_f1": 0.5339489800159636,
+      "n_features": 51,
+      "seed": 3
+    },
+    {
+      "arm": "cyber",
+      "model": "RandomForest",
+      "accuracy": 0.6704595185995623,
+      "macro_f1": 0.619097620111065,
+      "n_features": 36,
+      "seed": 4
+    },
+    {
+      "arm": "cyber",
+      "model": "LogReg",
+      "accuracy": 0.7129978118161926,
+      "macro_f1": 0.6852654964405723,
+      "n_features": 36,
+      "seed": 4
+    },
+    {
+      "arm": "cyber",
+      "model": "MLP",
+      "accuracy": 0.598512035010941,
+      "macro_f1": 0.5611446104427202,
+      "n_features": 36,
+      "seed": 4
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "RandomForest",
+      "accuracy": 0.9134354485776806,
+      "macro_f1": 0.9100400179567325,
+      "n_features": 51,
+      "seed": 4
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "LogReg",
+      "accuracy": 0.7753172866520788,
+      "macro_f1": 0.746820039840073,
+      "n_features": 51,
+      "seed": 4
+    },
+    {
+      "arm": "cyber+phys",
+      "model": "MLP",
+      "accuracy": 0.7787308533916849,
+      "macro_f1": 0.7481025538596118,
+      "n_features": 51,
+      "seed": 4
+    },
+    {
+      "arm": "null: order",
+      "model": "RandomForest",
+      "accuracy": 0.9965864332603939,
+      "macro_f1": 0.9953028368882474,
+      "n_features": 51,
+      "seed": 4
+    },
+    {
+      "arm": "null: order",
+      "model": "LogReg",
+      "accuracy": 0.9432822757111597,
+      "macro_f1": 0.9478164472132559,
+      "n_features": 51,
+      "seed": 4
+    },
+    {
+      "arm": "null: order",
+      "model": "MLP",
+      "accuracy": 0.9423194748358862,
+      "macro_f1": 0.9481608165342649,
+      "n_features": 51,
+      "seed": 4
+    },
+    {
+      "arm": "null: class",
+      "model": "RandomForest",
+      "accuracy": 0.7209628008752735,
+      "macro_f1": 0.7164801578484168,
+      "n_features": 51,
+      "seed": 4
+    },
+    {
+      "arm": "null: class",
+      "model": "LogReg",
+      "accuracy": 0.7348796498905908,
+      "macro_f1": 0.7234997715141175,
+      "n_features": 51,
+      "seed": 4
+    },
+    {
+      "arm": "null: class",
+      "model": "MLP",
+      "accuracy": 0.7094967177242888,
+      "macro_f1": 0.7001123438484734,
+      "n_features": 51,
+      "seed": 4
+    }
+  ],
+  "summary": [
+    {
+      "model": "RandomForest",
+      "cyber": 0.519338518187799,
+      "paired": 0.8734947956354121,
+      "null_order": 0.9901320483998282,
+      "null_class": 0.860384830485434,
+      "gain_paired": 0.35415627744761313,
+      "gain_null_order": 0.4707935302120292,
+      "gain_null_class": 0.34104631229763505
+    },
+    {
+      "model": "LogReg",
+      "cyber": 0.5202293169564,
+      "paired": 0.8244854159731634,
+      "null_order": 0.9434111461960256,
+      "null_class": 0.7835860871529262,
+      "gain_paired": 0.3042560990167634,
+      "gain_null_order": 0.42318182923962566,
+      "gain_null_class": 0.26335677019652626
+    },
+    {
+      "model": "MLP",
+      "cyber": 0.48951749177130355,
+      "paired": 0.771873826881583,
+      "null_order": 0.9521516785278745,
+      "null_class": 0.7709555954610305,
+      "gain_paired": 0.28235633511027947,
+      "gain_null_order": 0.462634186756571,
+      "gain_null_class": 0.281438103689727
+    }
+  ]
+}

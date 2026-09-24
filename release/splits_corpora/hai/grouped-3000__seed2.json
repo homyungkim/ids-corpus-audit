@@ -1,0 +1,16 @@
+{
+ "policy": "grouped-3000",
+ "corpus": "hai",
+ "block_rows": 3000,
+ "test_size": 0.3,
+ "seed": 2,
+ "held_out_groups": [
+  "test5#0",
+  "test5#1",
+  "train2#2",
+  "train3#0",
+  "train3#3",
+  "train3#4",
+  "train3#6"
+ ]
+}

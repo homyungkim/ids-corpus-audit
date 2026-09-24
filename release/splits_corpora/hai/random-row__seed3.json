@@ -1,0 +1,10 @@
+{
+ "policy": "random-row",
+ "corpus": "hai",
+ "n_rows": 60000,
+ "test_size": 0.3,
+ "seed": 3,
+ "recipe": "np.random.default_rng(seed).permutation(n_rows)[:round(n_rows*test_size)], sorted",
+ "test_sha256_16": "f6081c82f592d323",
+ "note": "for measuring the gap against the grouped policies, not for building on"
+}

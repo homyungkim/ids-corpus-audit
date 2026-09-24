@@ -1,0 +1,18 @@
+# Core. Install these first, on the A6000 machine.
+torch>=2.2            # install the CUDA build from pytorch.org, not from PyPI defaults
+numpy>=1.24
+scipy>=1.11
+pandas>=2.0
+scikit-learn>=1.3
+matplotlib>=3.7
+pyyaml>=6.0
+
+# Export and deployment. TensorRT ships with the NVIDIA wheels or JetPack;
+# pin to the version that matches the installed CUDA.
+onnx>=1.15
+onnxruntime>=1.17     # optional, for checking the exported graph on CPU
+# tensorrt>=10.0      # install from NVIDIA's index, see README
+# pycuda>=2024.1      # needed by the calibrator and the engine runner
+
+# Optional, only for reading PX4 .ulg logs directly.
+# pyulog>=1.0

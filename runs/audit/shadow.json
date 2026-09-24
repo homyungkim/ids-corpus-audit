@@ -1,0 +1,302 @@
+{
+  "window": 64,
+  "stride": 32,
+  "captures": [
+    {
+      "file": "Direct-Armed-Attack-1.pcapng",
+      "group": 0,
+      "cls": "Attack",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 294
+    },
+    {
+      "file": "Direct-Armed-Attack-10.pcapng",
+      "group": 1,
+      "cls": "Attack",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 134
+    },
+    {
+      "file": "Direct-Armed-Attack-2.pcapng",
+      "group": 2,
+      "cls": "Attack",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 213
+    },
+    {
+      "file": "Direct-Armed-Attack-3.pcapng",
+      "group": 3,
+      "cls": "Attack",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 253
+    },
+    {
+      "file": "Direct-Armed-Attack-4.pcapng",
+      "group": 4,
+      "cls": "Attack",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 167
+    },
+    {
+      "file": "Direct-Armed-Attack-5.pcapng",
+      "group": 5,
+      "cls": "Attack",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 154
+    },
+    {
+      "file": "Direct-Armed-Attack-6.pcapng",
+      "group": 6,
+      "cls": "Attack",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 83
+    },
+    {
+      "file": "Direct-Armed-Attack-7.pcapng",
+      "group": 7,
+      "cls": "Attack",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 133
+    },
+    {
+      "file": "Direct-Armed-Attack-8.pcapng",
+      "group": 8,
+      "cls": "Attack",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 107
+    },
+    {
+      "file": "Direct-Armed-Attack-9.pcapng",
+      "group": 9,
+      "cls": "Attack",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 213
+    },
+    {
+      "file": "Direct-Armed-Benign-1.pcapng",
+      "group": 10,
+      "cls": "Benign",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 602
+    },
+    {
+      "file": "Direct-Armed-Benign-2.pcapng",
+      "group": 11,
+      "cls": "Benign",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 596
+    },
+    {
+      "file": "Direct-Armed-Benign-3.pcapng",
+      "group": 12,
+      "cls": "Benign",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 600
+    },
+    {
+      "file": "Direct-Armed-Benign-4.pcapng",
+      "group": 13,
+      "cls": "Benign",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 600
+    },
+    {
+      "file": "Direct-Armed-Benign-5.pcapng",
+      "group": 14,
+      "cls": "Benign",
+      "path": "Direct",
+      "state": "Armed",
+      "windows": 601
+    },
+    {
+      "file": "Direct-Disarmed-Attack-1.pcapng",
+      "group": 15,
+      "cls": "Attack",
+      "path": "Direct",
+      "state": "Disarmed",
+      "windows": 685
+    },
+    {
+      "file": "Direct-Disarmed-Attack-2.pcapng",
+      "group": 16,
+      "cls": "Attack",
+      "path": "Direct",
+      "state": "Disarmed",
+      "windows": 709
+    },
+    {
+      "file": "Direct-Disarmed-Attack-3.pcapng",
+      "group": 17,
+      "cls": "Attack",
+      "path": "Direct",
+      "state": "Disarmed",
+      "windows": 735
+    },
+    {
+      "file": "Direct-Disarmed-Benign-1.pcapng",
+      "group": 18,
+      "cls": "Benign",
+      "path": "Direct",
+      "state": "Disarmed",
+      "windows": 1037
+    },
+    {
+      "file": "Direct-Disarmed-Benign-2.pcapng",
+      "group": 19,
+      "cls": "Benign",
+      "path": "Direct",
+      "state": "Disarmed",
+      "windows": 1070
+    },
+    {
+      "file": "Direct-Disarmed-Benign-3.pcapng",
+      "group": 20,
+      "cls": "Benign",
+      "path": "Direct",
+      "state": "Disarmed",
+      "windows": 1054
+    },
+    {
+      "file": "Relay-Armed-Attack-1.pcapng",
+      "group": 21,
+      "cls": "Attack",
+      "path": "Relay",
+      "state": "Armed",
+      "windows": 159
+    },
+    {
+      "file": "Relay-Armed-Attack-2.pcapng",
+      "group": 22,
+      "cls": "Attack",
+      "path": "Relay",
+      "state": "Armed",
+      "windows": 463
+    },
+    {
+      "file": "Relay-Armed-Attack-3.pcapng",
+      "group": 23,
+      "cls": "Attack",
+      "path": "Relay",
+      "state": "Armed",
+      "windows": 359
+    },
+    {
+      "file": "Relay-Armed-Attack-4.pcapng",
+      "group": 24,
+      "cls": "Attack",
+      "path": "Relay",
+      "state": "Armed",
+      "windows": 254
+    },
+    {
+      "file": "Relay-Armed-Attack-5.pcapng",
+      "group": 25,
+      "cls": "Attack",
+      "path": "Relay",
+      "state": "Armed",
+      "windows": 441
+    },
+    {
+      "file": "Relay-Armed-Benign-1.pcapng",
+      "group": 26,
+      "cls": "Benign",
+      "path": "Relay",
+      "state": "Armed",
+      "windows": 958
+    },
+    {
+      "file": "Relay-Armed-Benign-2.pcapng",
+      "group": 27,
+      "cls": "Benign",
+      "path": "Relay",
+      "state": "Armed",
+      "windows": 922
+    },
+    {
+      "file": "Relay-Armed-Benign-3.pcapng",
+      "group": 28,
+      "cls": "Benign",
+      "path": "Relay",
+      "state": "Armed",
+      "windows": 931
+    },
+    {
+      "file": "Relay-Disarmed-Attack-1.pcapng",
+      "group": 29,
+      "cls": "Attack",
+      "path": "Relay",
+      "state": "Disarmed",
+      "windows": 810
+    },
+    {
+      "file": "Relay-Disarmed-Attack-2.pcapng",
+      "group": 30,
+      "cls": "Attack",
+      "path": "Relay",
+      "state": "Disarmed",
+      "windows": 808
+    },
+    {
+      "file": "Relay-Disarmed-Attack-3.pcapng",
+      "group": 31,
+      "cls": "Attack",
+      "path": "Relay",
+      "state": "Disarmed",
+      "windows": 886
+    },
+    {
+      "file": "Relay-Disarmed-Benign-1.pcapng",
+      "group": 32,
+      "cls": "Benign",
+      "path": "Relay",
+      "state": "Disarmed",
+      "windows": 911
+    },
+    {
+      "file": "Relay-Disarmed-Benign-2.pcapng",
+      "group": 33,
+      "cls": "Benign",
+      "path": "Relay",
+      "state": "Disarmed",
+      "windows": 994
+    },
+    {
+      "file": "Relay-Disarmed-Benign-3.pcapng",
+      "group": 34,
+      "cls": "Benign",
+      "path": "Relay",
+      "state": "Disarmed",
+      "windows": 1040
+    }
+  ],
+  "within_capture": [
+    0.9971633572501252,
+    0.9951610211913899,
+    0.9963290505589855,
+    0.9954947438678459,
+    0.9956616052060737
+  ],
+  "leave_captures_out": [
+    0.9981147320226232,
+    0.8556891766882516,
+    0.992593647628543,
+    0.9906458226550487,
+    0.9929339025467393
+  ],
+  "capture_identification_35way": 0.5976973135324545,
+  "majority": 0.5965158189827793
+}

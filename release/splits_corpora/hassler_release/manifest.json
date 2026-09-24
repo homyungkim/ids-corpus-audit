@@ -1,0 +1,38 @@
+{
+  "corpus": "hassler_release",
+  "name": "Hassler corrected release v1.0.0 (cyber view)",
+  "rows": 40000,
+  "captures": 5,
+  "features": 13,
+  "classes": {
+    "benign": 8895,
+    "dos": 11067,
+    "evil_twin": 5370,
+    "fdi": 3277,
+    "replay": 11391
+  },
+  "load_digest": "160c9f6dfad83386",
+  "test_size": 0.3,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "policies": {
+    "loco": {
+      "defined": false,
+      "reason": "a class occupies a single capture: benign in 1, dos in 1, evil_twin in 1, fdi in 1, replay in 1"
+    },
+    "grouped-500": {
+      "groups": 82
+    },
+    "grouped-3000": {
+      "groups": 15
+    },
+    "random-row": {
+      "rows": 40000
+    }
+  }
+}

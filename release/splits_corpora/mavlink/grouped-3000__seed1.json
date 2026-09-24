@@ -1,0 +1,11 @@
+{
+ "policy": "grouped-3000",
+ "corpus": "mavlink",
+ "block_rows": 3000,
+ "test_size": 0.3,
+ "seed": 1,
+ "held_out_groups": [
+  "heartbeat#0",
+  "ping2#0"
+ ]
+}

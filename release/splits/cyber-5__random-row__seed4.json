@@ -1,0 +1,13 @@
+{
+ "policy": "random-row",
+ "reading": "cyber-5",
+ "load_kwargs": {
+  "view": "cyber"
+ },
+ "block_rows": null,
+ "test_size": 0.3,
+ "seed": 4,
+ "n_rows": 42258,
+ "test_sha256_16": "3255cfacbba606c3",
+ "note": "reconstructed by uav_cpids.apply_split; present for comparison against the grouped policies, not for building on"
+}

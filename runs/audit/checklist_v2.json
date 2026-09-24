@@ -1,0 +1,618 @@
+{
+  "hassler": {
+    "name": "Hassler et al. (IEEE T-ITS 2024)",
+    "records": 40000,
+    "captures": 5,
+    "results": [
+      {
+        "code": "A1",
+        "title": "parses under its documented format",
+        "status": "FAIL",
+        "value": "documented 'single CSV, 37 cyber / 16 physical features', actually 'five concatenated exports, three schemas'",
+        "detail": "A reader following the documentation gets the wrong answer and no error."
+      },
+      {
+        "code": "A2",
+        "title": "one header per file, consistent across files",
+        "status": "FAIL",
+        "value": "10 distinct header rows",
+        "detail": "Embedded headers become data rows under a standard read."
+      },
+      {
+        "code": "A3",
+        "title": "field count is the same on every row",
+        "status": "WARN",
+        "value": "5 distinct widths: 17..38",
+        "detail": "A delimiter-based read produces ragged rows whose columns mean different things."
+      },
+      {
+        "code": "A4",
+        "title": "every line parses",
+        "status": "PASS",
+        "value": "0 of 54,774 unparsed (0.00%)",
+        "detail": ""
+      },
+      {
+        "code": "A5",
+        "title": "declared lengths match the payload",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "A6",
+        "title": "record counts match the documentation",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "B1",
+        "title": "labels survive the standard read",
+        "status": "FAIL",
+        "value": "33,102 of 54,774 (60.4%)",
+        "detail": ""
+      },
+      {
+        "code": "B2",
+        "title": "label vocabulary is internally consistent",
+        "status": "WARN",
+        "value": "6 spellings, collisions {'dos': ['DoS', 'DoS attack']}",
+        "detail": "The same class is written two ways; a merge across files yields two classes where there is one."
+      },
+      {
+        "code": "B3",
+        "title": "every documented class is recoverable",
+        "status": "PASS",
+        "value": "5 of 5",
+        "detail": ""
+      },
+      {
+        "code": "B4",
+        "title": "attack type is labelled per record",
+        "status": "PASS",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "C1",
+        "title": "at least three captures per class",
+        "status": "FAIL",
+        "value": "{'benign': 1, 'dos': 1, 'evil_twin': 1, 'fdi': 1, 'replay': 1}",
+        "detail": "With one capture per class, class and capture are the same variable."
+      },
+      {
+        "code": "C2",
+        "title": "benign-only captures exist",
+        "status": "WARN",
+        "value": "1 of 5 captures",
+        "detail": ""
+      },
+      {
+        "code": "C3",
+        "title": "leave-one-capture-out is possible",
+        "status": "FAIL",
+        "value": "min 1 captures in a class",
+        "detail": "No held-out capture exists for at least one class, so cross-capture generalisation cannot be measured at all."
+      },
+      {
+        "code": "C4",
+        "title": "capture is not identifiable from the features",
+        "status": "FAIL",
+        "value": "index 0.914  (0.9309 on 5-way, chance 0.2000)",
+        "detail": "A record names its own capture most of the time. Whether that matters depends on C1 and C5."
+      },
+      {
+        "code": "C5",
+        "title": "class survives holding a capture out",
+        "status": "FAIL",
+        "value": "cannot be measured",
+        "detail": "At least one class comes from a single capture, so no held-out capture of it exists. The corpus cannot tell attack detection from capture identification, and no modelling choice repairs that."
+      },
+      {
+        "code": "D1",
+        "title": "result does not depend on the split policy",
+        "status": "FAIL",
+        "value": "random 0.9331 vs contiguous blocks 0.5898 (gap +0.3433)",
+        "detail": ""
+      },
+      {
+        "code": "D2",
+        "title": "the task is not already saturated",
+        "status": "PASS",
+        "value": "shallow model 0.5404 +/- 0.039, majority 0.3859",
+        "detail": ""
+      },
+      {
+        "code": "D3",
+        "title": "the release states how to split",
+        "status": "WARN",
+        "value": "False",
+        "detail": ""
+      },
+      {
+        "code": "E1",
+        "title": "the two views share a clock",
+        "status": "FAIL",
+        "value": "cyber and physical are separate row blocks with no sample-level correspondence; the FDI physical block has no timestamp column",
+        "detail": ""
+      },
+      {
+        "code": "E2",
+        "title": "pairing invents little",
+        "status": "FAIL",
+        "value": "worst class 91.9% invented",
+        "detail": ""
+      },
+      {
+        "code": "E3",
+        "title": "the fusion gain fails its null control",
+        "status": "FAIL",
+        "value": "gain +0.354, null +0.341",
+        "detail": "Giving each class another class's second view reproduces the gain; it measures the capture."
+      }
+    ]
+  },
+  "uavcan": {
+    "name": "HCRL UAVCAN 2022 (arXiv:2212.09268)",
+    "records": 60000,
+    "captures": 10,
+    "results": [
+      {
+        "code": "A1",
+        "title": "parses under its documented format",
+        "status": "FAIL",
+        "value": "documented 'CSV, six columns', actually 'candump text in .bin, no header, no commas'",
+        "detail": "A reader following the documentation gets the wrong answer and no error."
+      },
+      {
+        "code": "A2",
+        "title": "one header per file, consistent across files",
+        "status": "FAIL",
+        "value": "0 distinct header rows",
+        "detail": "Embedded headers become data rows under a standard read."
+      },
+      {
+        "code": "A3",
+        "title": "field count is the same on every row",
+        "status": "WARN",
+        "value": "8 distinct widths: 6..13",
+        "detail": "A delimiter-based read produces ragged rows whose columns mean different things."
+      },
+      {
+        "code": "A4",
+        "title": "every line parses",
+        "status": "PASS",
+        "value": "0 of 2,032,530 unparsed (0.00%)",
+        "detail": ""
+      },
+      {
+        "code": "A5",
+        "title": "declared lengths match the payload",
+        "status": "PASS",
+        "value": "True",
+        "detail": ""
+      },
+      {
+        "code": "A6",
+        "title": "record counts match the documentation",
+        "status": "PASS",
+        "value": "all ten scenarios match the report to the frame",
+        "detail": ""
+      },
+      {
+        "code": "B1",
+        "title": "labels survive the standard read",
+        "status": "FAIL",
+        "value": "0 of 2,032,530 (0.0%)",
+        "detail": ""
+      },
+      {
+        "code": "B2",
+        "title": "label vocabulary is internally consistent",
+        "status": "PASS",
+        "value": "2 spellings",
+        "detail": ""
+      },
+      {
+        "code": "B3",
+        "title": "every documented class is recoverable",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "B4",
+        "title": "attack type is labelled per record",
+        "status": "FAIL",
+        "value": "46.4% of attack records carry no type",
+        "detail": "Type lives in the file name; captures that mix types cannot be split by type at all."
+      },
+      {
+        "code": "C1",
+        "title": "at least three captures per class",
+        "status": "PASS",
+        "value": "{'attack': 10, 'normal': 10}",
+        "detail": ""
+      },
+      {
+        "code": "C2",
+        "title": "benign-only captures exist",
+        "status": "FAIL",
+        "value": "0 of 10 captures",
+        "detail": "Every benign record was taken while an attack was running; a benign-trained detector is calibrated on that."
+      },
+      {
+        "code": "C3",
+        "title": "leave-one-capture-out is possible",
+        "status": "PASS",
+        "value": "min 10 captures in a class",
+        "detail": ""
+      },
+      {
+        "code": "C4",
+        "title": "capture is not identifiable from the features",
+        "status": "PASS",
+        "value": "index 0.139  (0.2251 on 10-way, chance 0.1000)",
+        "detail": ""
+      },
+      {
+        "code": "C5",
+        "title": "class survives holding a capture out",
+        "status": "PASS",
+        "value": "within 0.8411 vs capture-out 0.8272 +/- 0.005 (gap +0.0138)",
+        "detail": ""
+      },
+      {
+        "code": "D1",
+        "title": "result does not depend on the split policy",
+        "status": "PASS",
+        "value": "random 0.8411 vs contiguous blocks 0.8399 (gap +0.0011)",
+        "detail": ""
+      },
+      {
+        "code": "D2",
+        "title": "the task is not already saturated",
+        "status": "PASS",
+        "value": "shallow model 0.8272 +/- 0.005, majority 0.6746",
+        "detail": ""
+      },
+      {
+        "code": "D3",
+        "title": "the release states how to split",
+        "status": "WARN",
+        "value": "False",
+        "detail": ""
+      },
+      {
+        "code": "E1",
+        "title": "the two views share a clock",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "E2",
+        "title": "pairing invents little",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "E3",
+        "title": "the fusion gain fails its null control",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      }
+    ]
+  },
+  "lumi": {
+    "name": "HCRL UAVCAN 2026 (LUMI)",
+    "records": 60000,
+    "captures": 10,
+    "results": [
+      {
+        "code": "A1",
+        "title": "parses under its documented format",
+        "status": "PASS",
+        "value": "CSV with a header",
+        "detail": ""
+      },
+      {
+        "code": "A2",
+        "title": "one header per file, consistent across files",
+        "status": "PASS",
+        "value": "1 distinct header rows",
+        "detail": ""
+      },
+      {
+        "code": "A3",
+        "title": "field count is the same on every row",
+        "status": "PASS",
+        "value": "1 distinct widths: 5..5",
+        "detail": ""
+      },
+      {
+        "code": "A4",
+        "title": "every line parses",
+        "status": "PASS",
+        "value": "0 of 2,018,241 unparsed (0.00%)",
+        "detail": ""
+      },
+      {
+        "code": "A5",
+        "title": "declared lengths match the payload",
+        "status": "PASS",
+        "value": "True",
+        "detail": ""
+      },
+      {
+        "code": "A6",
+        "title": "record counts match the documentation",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "B1",
+        "title": "labels survive the standard read",
+        "status": "PASS",
+        "value": "2,018,241 of 2,018,241 (100.0%)",
+        "detail": ""
+      },
+      {
+        "code": "B2",
+        "title": "label vocabulary is internally consistent",
+        "status": "PASS",
+        "value": "2 spellings",
+        "detail": ""
+      },
+      {
+        "code": "B3",
+        "title": "every documented class is recoverable",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "B4",
+        "title": "attack type is labelled per record",
+        "status": "FAIL",
+        "value": "100.0% of attack records carry no type",
+        "detail": "Type lives in the file name; captures that mix types cannot be split by type at all."
+      },
+      {
+        "code": "C1",
+        "title": "at least three captures per class",
+        "status": "PASS",
+        "value": "{'attack': 10, 'normal': 10}",
+        "detail": ""
+      },
+      {
+        "code": "C2",
+        "title": "benign-only captures exist",
+        "status": "FAIL",
+        "value": "0 of 10 captures",
+        "detail": "Every benign record was taken while an attack was running; a benign-trained detector is calibrated on that."
+      },
+      {
+        "code": "C3",
+        "title": "leave-one-capture-out is possible",
+        "status": "PASS",
+        "value": "min 10 captures in a class",
+        "detail": ""
+      },
+      {
+        "code": "C4",
+        "title": "capture is not identifiable from the features",
+        "status": "PASS",
+        "value": "index 0.096  (0.1863 on 10-way, chance 0.1000)",
+        "detail": ""
+      },
+      {
+        "code": "C5",
+        "title": "class survives holding a capture out",
+        "status": "PASS",
+        "value": "within 0.8490 vs capture-out 0.8305 +/- 0.013 (gap +0.0185)",
+        "detail": ""
+      },
+      {
+        "code": "D1",
+        "title": "result does not depend on the split policy",
+        "status": "PASS",
+        "value": "random 0.8490 vs contiguous blocks 0.8488 (gap +0.0001)",
+        "detail": ""
+      },
+      {
+        "code": "D2",
+        "title": "the task is not already saturated",
+        "status": "PASS",
+        "value": "shallow model 0.8305 +/- 0.013, majority 0.5537",
+        "detail": ""
+      },
+      {
+        "code": "D3",
+        "title": "the release states how to split",
+        "status": "WARN",
+        "value": "False",
+        "detail": ""
+      },
+      {
+        "code": "E1",
+        "title": "the two views share a clock",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "E2",
+        "title": "pairing invents little",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "E3",
+        "title": "the fusion gain fails its null control",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      }
+    ]
+  },
+  "shadow": {
+    "name": "HCRL SHADOW-GCS (PRDC 2025)",
+    "records": 19976,
+    "captures": 35,
+    "results": [
+      {
+        "code": "A1",
+        "title": "parses under its documented format",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "A2",
+        "title": "one header per file, consistent across files",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "A3",
+        "title": "field count is the same on every row",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "A4",
+        "title": "every line parses",
+        "status": "PASS",
+        "value": "0 of 19,976 unparsed (0.00%)",
+        "detail": ""
+      },
+      {
+        "code": "A5",
+        "title": "declared lengths match the payload",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "A6",
+        "title": "record counts match the documentation",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "B1",
+        "title": "labels survive the standard read",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "B2",
+        "title": "label vocabulary is internally consistent",
+        "status": "PASS",
+        "value": "2 spellings",
+        "detail": ""
+      },
+      {
+        "code": "B3",
+        "title": "every documented class is recoverable",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "B4",
+        "title": "attack type is labelled per record",
+        "status": "FAIL",
+        "value": "100.0% of attack records carry no type",
+        "detail": "Type lives in the file name; captures that mix types cannot be split by type at all."
+      },
+      {
+        "code": "C1",
+        "title": "at least three captures per class",
+        "status": "PASS",
+        "value": "{'attack': 21, 'benign': 14}",
+        "detail": ""
+      },
+      {
+        "code": "C2",
+        "title": "benign-only captures exist",
+        "status": "PASS",
+        "value": "14 of 35 captures",
+        "detail": ""
+      },
+      {
+        "code": "C3",
+        "title": "leave-one-capture-out is possible",
+        "status": "PASS",
+        "value": "min 14 captures in a class",
+        "detail": ""
+      },
+      {
+        "code": "C4",
+        "title": "capture is not identifiable from the features",
+        "status": "FAIL",
+        "value": "index 0.584  (0.5957 on 35-way, chance 0.0286)",
+        "detail": "A record names its own capture most of the time. Whether that matters depends on C1 and C5."
+      },
+      {
+        "code": "C5",
+        "title": "class survives holding a capture out",
+        "status": "PASS",
+        "value": "within 0.9962 vs capture-out 0.9629 +/- 0.061 (gap +0.0333)",
+        "detail": "the held-out-capture score varies by 0.061 across 5 seeds (min 0.8410); with few captures the split composition dominates, and a single seed misleads."
+      },
+      {
+        "code": "D1",
+        "title": "result does not depend on the split policy",
+        "status": "PASS",
+        "value": "random 0.9962 vs contiguous blocks 0.9952 (gap +0.0010)",
+        "detail": ""
+      },
+      {
+        "code": "D2",
+        "title": "the task is not already saturated",
+        "status": "PASS",
+        "value": "shallow model 0.9629 +/- 0.061, majority 0.6686",
+        "detail": ""
+      },
+      {
+        "code": "D3",
+        "title": "the release states how to split",
+        "status": "WARN",
+        "value": "False",
+        "detail": ""
+      },
+      {
+        "code": "E1",
+        "title": "the two views share a clock",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "E2",
+        "title": "pairing invents little",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "E3",
+        "title": "the fusion gain fails its null control",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      }
+    ]
+  }
+}

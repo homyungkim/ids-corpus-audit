@@ -1,0 +1,13 @@
+{
+ "policy": "grouped-3000",
+ "corpus": "hassler",
+ "block_rows": 3000,
+ "test_size": 0.3,
+ "seed": 4,
+ "held_out_groups": [
+  "block-benign#0",
+  "block-benign#1",
+  "block-fdi#1",
+  "block-replay#1"
+ ]
+}

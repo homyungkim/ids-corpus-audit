@@ -1,0 +1,7 @@
+{
+ "policy": "loco",
+ "corpus": "hassler_release",
+ "defined": false,
+ "reason": "a class occupies a single capture: benign in 1, dos in 1, evil_twin in 1, fdi in 1, replay in 1",
+ "note": "Leave-one-capture-out cannot be formed on this corpus. Any reported accuracy therefore rests on a split that leaves capture identity available to the model."
+}

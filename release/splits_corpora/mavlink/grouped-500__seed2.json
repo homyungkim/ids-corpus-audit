@@ -1,0 +1,21 @@
+{
+ "policy": "grouped-500",
+ "corpus": "mavlink",
+ "block_rows": 500,
+ "test_size": 0.3,
+ "seed": 2,
+ "held_out_groups": [
+  "heartbeat#3",
+  "heartbeat2#1",
+  "heartbeat2#2",
+  "normal#2",
+  "ping#2",
+  "ping#3",
+  "ping#4",
+  "ping2#3",
+  "request#2",
+  "request#3",
+  "request#4",
+  "request2#2"
+ ]
+}

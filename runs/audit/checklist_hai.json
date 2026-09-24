@@ -1,0 +1,156 @@
+{
+  "hai": {
+    "name": "HAI 21.03 (HIL-based augmented ICS)",
+    "records": 60000,
+    "captures": 8,
+    "results": [
+      {
+        "code": "A1",
+        "title": "parses under its documented format",
+        "status": "PASS",
+        "value": "one CSV per capture, one row per second, 79 process points plus four label columns",
+        "detail": ""
+      },
+      {
+        "code": "A2",
+        "title": "one header per file, consistent across files",
+        "status": "FAIL",
+        "value": "8 distinct header rows",
+        "detail": "Embedded headers become data rows under a standard read."
+      },
+      {
+        "code": "A3",
+        "title": "field count is the same on every row",
+        "status": "PASS",
+        "value": "1 distinct widths: 84..84",
+        "detail": ""
+      },
+      {
+        "code": "A4",
+        "title": "every line parses",
+        "status": "PASS",
+        "value": "0 of 1,323,608 unparsed (0.00%)",
+        "detail": ""
+      },
+      {
+        "code": "A5",
+        "title": "declared lengths match the payload",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "A6",
+        "title": "record counts match the documentation",
+        "status": "PASS",
+        "value": "True",
+        "detail": ""
+      },
+      {
+        "code": "B1",
+        "title": "labels survive the standard read",
+        "status": "PASS",
+        "value": "1,323,608 of 60,000 (2206.0%)",
+        "detail": ""
+      },
+      {
+        "code": "B2",
+        "title": "label vocabulary is internally consistent",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "B3",
+        "title": "every documented class is recoverable",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "B4",
+        "title": "attack type is labelled per record",
+        "status": "WARN",
+        "value": "0.0% of attack records carry no type",
+        "detail": ""
+      },
+      {
+        "code": "C1",
+        "title": "at least three captures per class",
+        "status": "PASS",
+        "value": "{'attack': 5, 'normal': 8}",
+        "detail": ""
+      },
+      {
+        "code": "C2",
+        "title": "benign-only captures exist",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "C3",
+        "title": "leave-one-capture-out is possible",
+        "status": "PASS",
+        "value": "min 5 captures in a class",
+        "detail": ""
+      },
+      {
+        "code": "C4",
+        "title": "capture is not identifiable from the features",
+        "status": "FAIL",
+        "value": "index 0.960  (0.9653 on 8-way, chance 0.1250)",
+        "detail": "A record names its own capture most of the time. Whether that matters depends on C1 and C5."
+      },
+      {
+        "code": "C5",
+        "title": "class survives holding a capture out",
+        "status": "PASS",
+        "value": "within 0.9968 vs capture-out 0.9923 +/- 0.003 (gap +0.0045)",
+        "detail": ""
+      },
+      {
+        "code": "D1",
+        "title": "result does not depend on the split policy",
+        "status": "PASS",
+        "value": "random 0.9968 vs contiguous blocks 0.9953 (gap +0.0015)",
+        "detail": ""
+      },
+      {
+        "code": "D2",
+        "title": "the task is not already saturated",
+        "status": "WARN",
+        "value": "shallow model 0.9923 +/- 0.003, majority 0.9917",
+        "detail": ""
+      },
+      {
+        "code": "D3",
+        "title": "the release states how to split",
+        "status": "PASS",
+        "value": "True",
+        "detail": ""
+      },
+      {
+        "code": "E1",
+        "title": "the two views share a clock",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "E2",
+        "title": "pairing invents little",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      },
+      {
+        "code": "E3",
+        "title": "the fusion gain fails its null control",
+        "status": "n/a",
+        "value": null,
+        "detail": ""
+      }
+    ]
+  }
+}

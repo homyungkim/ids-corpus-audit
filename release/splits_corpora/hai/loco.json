@@ -1,0 +1,76 @@
+{
+ "policy": "loco",
+ "corpus": "hai",
+ "basis": "every class spans at least 5 captures",
+ "folds": [
+  {
+   "held_out_capture": "test1",
+   "usable": true,
+   "n_test": 1958,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "test2",
+   "usable": true,
+   "n_test": 5382,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "test3",
+   "usable": true,
+   "n_test": 4799,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "test4",
+   "usable": true,
+   "n_test": 1782,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "test5",
+   "usable": true,
+   "n_test": 4163,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "train1",
+   "usable": true,
+   "n_test": 9892,
+   "test_classes": [
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "train2",
+   "usable": true,
+   "n_test": 10306,
+   "test_classes": [
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "train3",
+   "usable": true,
+   "n_test": 21718,
+   "test_classes": [
+    "normal"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "policy": "loco",
+ "corpus": "mavlink",
+ "basis": "every class spans at least 2 captures",
+ "folds": [
+  {
+   "held_out_capture": "heartbeat",
+   "usable": true,
+   "n_test": 2485,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "heartbeat2",
+   "usable": true,
+   "n_test": 2485,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "normal",
+   "usable": true,
+   "n_test": 2485,
+   "test_classes": [
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "normal2",
+   "usable": true,
+   "n_test": 2485,
+   "test_classes": [
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "ping",
+   "usable": true,
+   "n_test": 2485,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "ping2",
+   "usable": true,
+   "n_test": 2485,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "request",
+   "usable": true,
+   "n_test": 2485,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "request2",
+   "usable": true,
+   "n_test": 2485,
+   "test_classes": [
+    "attack"
+   ]
+  }
+ ]
+}

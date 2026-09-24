@@ -1,0 +1,287 @@
+{
+ "policy": "loco",
+ "corpus": "shadow",
+ "basis": "every class spans at least 14 captures",
+ "folds": [
+  {
+   "held_out_capture": "Direct-Armed-Attack-1",
+   "usable": true,
+   "n_test": 294,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Attack-10",
+   "usable": true,
+   "n_test": 134,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Attack-2",
+   "usable": true,
+   "n_test": 213,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Attack-3",
+   "usable": true,
+   "n_test": 253,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Attack-4",
+   "usable": true,
+   "n_test": 167,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Attack-5",
+   "usable": true,
+   "n_test": 154,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Attack-6",
+   "usable": true,
+   "n_test": 83,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Attack-7",
+   "usable": true,
+   "n_test": 133,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Attack-8",
+   "usable": true,
+   "n_test": 107,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Attack-9",
+   "usable": true,
+   "n_test": 213,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Benign-1",
+   "usable": true,
+   "n_test": 602,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Benign-2",
+   "usable": true,
+   "n_test": 596,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Benign-3",
+   "usable": true,
+   "n_test": 600,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Benign-4",
+   "usable": true,
+   "n_test": 600,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Armed-Benign-5",
+   "usable": true,
+   "n_test": 601,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Disarmed-Attack-1",
+   "usable": true,
+   "n_test": 685,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Disarmed-Attack-2",
+   "usable": true,
+   "n_test": 709,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Disarmed-Attack-3",
+   "usable": true,
+   "n_test": 735,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Disarmed-Benign-1",
+   "usable": true,
+   "n_test": 1037,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Disarmed-Benign-2",
+   "usable": true,
+   "n_test": 1070,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "Direct-Disarmed-Benign-3",
+   "usable": true,
+   "n_test": 1054,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Armed-Attack-1",
+   "usable": true,
+   "n_test": 159,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Armed-Attack-2",
+   "usable": true,
+   "n_test": 463,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Armed-Attack-3",
+   "usable": true,
+   "n_test": 359,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Armed-Attack-4",
+   "usable": true,
+   "n_test": 254,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Armed-Attack-5",
+   "usable": true,
+   "n_test": 441,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Armed-Benign-1",
+   "usable": true,
+   "n_test": 958,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Armed-Benign-2",
+   "usable": true,
+   "n_test": 922,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Armed-Benign-3",
+   "usable": true,
+   "n_test": 931,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Disarmed-Attack-1",
+   "usable": true,
+   "n_test": 810,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Disarmed-Attack-2",
+   "usable": true,
+   "n_test": 808,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Disarmed-Attack-3",
+   "usable": true,
+   "n_test": 886,
+   "test_classes": [
+    "attack"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Disarmed-Benign-1",
+   "usable": true,
+   "n_test": 911,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Disarmed-Benign-2",
+   "usable": true,
+   "n_test": 994,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "Relay-Disarmed-Benign-3",
+   "usable": true,
+   "n_test": 1040,
+   "test_classes": [
+    "benign"
+   ]
+  }
+ ]
+}

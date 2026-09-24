@@ -1,0 +1,36 @@
+{
+  "corpus": "lumi",
+  "name": "HCRL UAVCAN 2026 (LUMI)",
+  "rows": 60000,
+  "captures": 10,
+  "features": 3,
+  "classes": {
+    "attack": 26869,
+    "normal": 33131
+  },
+  "load_digest": "35fbe10c3556be2a",
+  "test_size": 0.3,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "policies": {
+    "loco": {
+      "folds": 10,
+      "usable": 10,
+      "basis": "every class spans at least 10 captures"
+    },
+    "grouped-500": {
+      "groups": 126
+    },
+    "grouped-3000": {
+      "groups": 26
+    },
+    "random-row": {
+      "rows": 60000
+    }
+  }
+}

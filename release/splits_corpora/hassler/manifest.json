@@ -1,0 +1,38 @@
+{
+  "corpus": "hassler",
+  "name": "Hassler et al. (IEEE T-ITS 2024)",
+  "rows": 40000,
+  "captures": 5,
+  "features": 13,
+  "classes": {
+    "benign": 8908,
+    "dos": 11070,
+    "evil_twin": 5366,
+    "fdi": 3302,
+    "replay": 11354
+  },
+  "load_digest": "c8e5ab86ab3a3f00",
+  "test_size": 0.3,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "policies": {
+    "loco": {
+      "defined": false,
+      "reason": "a class occupies a single capture: benign in 1, dos in 1, evil_twin in 1, fdi in 1, replay in 1"
+    },
+    "grouped-500": {
+      "groups": 82
+    },
+    "grouped-3000": {
+      "groups": 15
+    },
+    "random-row": {
+      "rows": 40000
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+ "policy": "random-row",
+ "reading": "both-3-captureA-truncate",
+ "load_kwargs": {
+  "view": "both",
+  "capture": "A",
+  "pair": "truncate"
+ },
+ "block_rows": null,
+ "test_size": 0.3,
+ "seed": 4,
+ "n_rows": 6236,
+ "test_sha256_16": "f0733ae0a2637c10",
+ "note": "reconstructed by uav_cpids.apply_split; present for comparison against the grouped policies, not for building on"
+}

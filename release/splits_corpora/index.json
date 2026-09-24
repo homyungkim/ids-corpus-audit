@@ -1,0 +1,52 @@
+{
+  "test_size": 0.3,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "block_sizes": [
+    500,
+    3000
+  ],
+  "corpora": [
+    {
+      "corpus": "hai",
+      "name": "HAI 21.03 (HIL-based augmented ICS)",
+      "rows": 60000,
+      "captures": 8,
+      "features": 79,
+      "classes": {
+        "attack": 427,
+        "normal": 59573
+      },
+      "load_digest": "9f1c05b95a1c8be1",
+      "test_size": 0.3,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "policies": {
+        "loco": {
+          "folds": 8,
+          "usable": 8,
+          "basis": "every class spans at least 5 captures"
+        },
+        "grouped-500": {
+          "groups": 123
+        },
+        "grouped-3000": {
+          "groups": 24
+        },
+        "random-row": {
+          "rows": 60000
+        }
+      }
+    }
+  ]
+}

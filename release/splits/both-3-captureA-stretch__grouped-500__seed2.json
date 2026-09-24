@@ -1,0 +1,34 @@
+{
+ "policy": "grouped-500",
+ "reading": "both-3-captureA-stretch",
+ "load_kwargs": {
+  "view": "both",
+  "capture": "A",
+  "pair": "stretch"
+ },
+ "block_rows": 500,
+ "test_size": 0.3,
+ "seed": 2,
+ "test_groups": [
+  6,
+  12,
+  14,
+  18,
+  33,
+  34,
+  35,
+  38,
+  40,
+  47,
+  51,
+  52,
+  53,
+  54,
+  56,
+  57,
+  60,
+  61,
+  62,
+  63
+ ]
+}

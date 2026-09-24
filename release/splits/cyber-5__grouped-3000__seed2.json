@@ -1,0 +1,17 @@
+{
+ "policy": "grouped-3000",
+ "reading": "cyber-5",
+ "load_kwargs": {
+  "view": "cyber"
+ },
+ "block_rows": 3000,
+ "test_size": 0.3,
+ "seed": 2,
+ "test_groups": [
+  2,
+  6,
+  7,
+  10,
+  15
+ ]
+}

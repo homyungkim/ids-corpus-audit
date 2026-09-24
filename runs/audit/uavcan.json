@@ -1,0 +1,293 @@
+{
+  "files": [
+    {
+      "scenario": 1,
+      "attack": "Flooding",
+      "frames": 207858,
+      "normal": 91042,
+      "attack_frames": 116816,
+      "unparsed": 0,
+      "field_widths": {
+        "13": 103513,
+        "7": 363,
+        "9": 511,
+        "6": 4845,
+        "10": 21,
+        "11": 8,
+        "8": 2995,
+        "12": 95602
+      },
+      "ts_span_s": 179.061121,
+      "ts_monotone": true,
+      "dlc_matches_bytes": true,
+      "documented_seconds": 180
+    },
+    {
+      "scenario": 2,
+      "attack": "Flooding",
+      "frames": 134170,
+      "normal": 102240,
+      "attack_frames": 31930,
+      "unparsed": 0,
+      "field_widths": {
+        "6": 5613,
+        "9": 502,
+        "13": 67086,
+        "7": 357,
+        "8": 4664,
+        "10": 4,
+        "12": 55944
+      },
+      "ts_span_s": 180.033413,
+      "ts_monotone": true,
+      "dlc_matches_bytes": true,
+      "documented_seconds": 180
+    },
+    {
+      "scenario": 3,
+      "attack": "Fuzzy",
+      "frames": 197479,
+      "normal": 101601,
+      "attack_frames": 95878,
+      "unparsed": 0,
+      "field_widths": {
+        "13": 98858,
+        "7": 366,
+        "9": 529,
+        "6": 5292,
+        "10": 21,
+        "11": 8,
+        "8": 4505,
+        "12": 87900
+      },
+      "ts_span_s": 179.740569,
+      "ts_monotone": true,
+      "dlc_matches_bytes": true,
+      "documented_seconds": 180
+    },
+    {
+      "scenario": 4,
+      "attack": "Fuzzy",
+      "frames": 133374,
+      "normal": 104204,
+      "attack_frames": 29170,
+      "unparsed": 0,
+      "field_widths": {
+        "13": 67302,
+        "7": 361,
+        "9": 534,
+        "6": 5261,
+        "10": 21,
+        "11": 8,
+        "8": 5513,
+        "12": 54374
+      },
+      "ts_span_s": 178.573399,
+      "ts_monotone": true,
+      "dlc_matches_bytes": true,
+      "documented_seconds": 180
+    },
+    {
+      "scenario": 5,
+      "attack": "Fuzzy",
+      "frames": 180608,
+      "normal": 129996,
+      "attack_frames": 50612,
+      "unparsed": 0,
+      "field_widths": {
+        "13": 94301,
+        "12": 78104,
+        "9": 749,
+        "7": 415,
+        "8": 7035,
+        "10": 4
+      },
+      "ts_span_s": 210.041283,
+      "ts_monotone": true,
+      "dlc_matches_bytes": true,
+      "documented_seconds": 210
+    },
+    {
+      "scenario": 6,
+      "attack": "Replay",
+      "frames": 241321,
+      "normal": 160233,
+      "attack_frames": 81088,
+      "unparsed": 0,
+      "field_widths": {
+        "13": 126250,
+        "12": 103983,
+        "9": 811,
+        "8": 9719,
+        "7": 554,
+        "10": 4
+      },
+      "ts_span_s": 280.043837,
+      "ts_monotone": true,
+      "dlc_matches_bytes": true,
+      "documented_seconds": 280
+    },
+    {
+      "scenario": 7,
+      "attack": "Flooding & Fuzzy",
+      "frames": 234162,
+      "normal": 141550,
+      "attack_frames": 92612,
+      "unparsed": 0,
+      "field_widths": {
+        "13": 120553,
+        "12": 106651,
+        "7": 475,
+        "9": 744,
+        "8": 5735,
+        "10": 4
+      },
+      "ts_span_s": 240.041077,
+      "ts_monotone": true,
+      "dlc_matches_bytes": true,
+      "documented_seconds": 240
+    },
+    {
+      "scenario": 8,
+      "attack": "Fuzzy & Replay",
+      "frames": 265800,
+      "normal": 150492,
+      "attack_frames": 115308,
+      "unparsed": 0,
+      "field_widths": {
+        "12": 120406,
+        "9": 755,
+        "13": 137082,
+        "7": 495,
+        "8": 7058,
+        "10": 4
+      },
+      "ts_span_s": 250.043272,
+      "ts_monotone": true,
+      "dlc_matches_bytes": true,
+      "documented_seconds": 240
+    },
+    {
+      "scenario": 9,
+      "attack": "Fuzzy & Replay",
+      "frames": 230378,
+      "normal": 163126,
+      "attack_frames": 67252,
+      "unparsed": 0,
+      "field_widths": {
+        "13": 119800,
+        "12": 101518,
+        "9": 744,
+        "8": 7779,
+        "7": 533,
+        "10": 4
+      },
+      "ts_span_s": 270.0383,
+      "ts_monotone": true,
+      "dlc_matches_bytes": true,
+      "documented_seconds": 270
+    },
+    {
+      "scenario": 10,
+      "attack": "Flooding, Fuzzy & Replay",
+      "frames": 207380,
+      "normal": 131530,
+      "attack_frames": 75850,
+      "unparsed": 0,
+      "field_widths": {
+        "13": 107139,
+        "12": 93242,
+        "9": 731,
+        "7": 435,
+        "8": 5829,
+        "10": 4
+      },
+      "ts_span_s": 220.040176,
+      "ts_monotone": true,
+      "dlc_matches_bytes": true,
+      "documented_seconds": 220
+    }
+  ],
+  "difficulty": [
+    {
+      "unseen_can_id": 0.4111581513197986,
+      "inter_arrival_threshold": 0.7791141473427627,
+      "forest_3_fields": 0.9166105391449373,
+      "attack_share_in_test": 0.5888418486802014,
+      "majority_baseline": 0.5888418486802014,
+      "scenario": 1
+    },
+    {
+      "unseen_can_id": 0.7386151896847283,
+      "inter_arrival_threshold": 0.7409753794936772,
+      "forest_3_fields": 0.8664381009167474,
+      "attack_share_in_test": 0.26138481031527167,
+      "majority_baseline": 0.7386151896847284,
+      "scenario": 2
+    },
+    {
+      "unseen_can_id": 0.49027749645533725,
+      "inter_arrival_threshold": 0.7371041793261764,
+      "forest_3_fields": 0.8917696306799001,
+      "attack_share_in_test": 0.5097225035446628,
+      "majority_baseline": 0.5097225035446628,
+      "scenario": 3
+    },
+    {
+      "unseen_can_id": 0.7608277309874291,
+      "inter_arrival_threshold": 0.7638267563042012,
+      "forest_3_fields": 0.876290205683153,
+      "attack_share_in_test": 0.2391722690125709,
+      "majority_baseline": 0.7608277309874291,
+      "scenario": 4
+    },
+    {
+      "unseen_can_id": 0.7200228854068619,
+      "inter_arrival_threshold": 0.7304689662809368,
+      "forest_3_fields": 0.8555820091172508,
+      "attack_share_in_test": 0.27997711459313807,
+      "majority_baseline": 0.720022885406862,
+      "scenario": 5
+    },
+    {
+      "unseen_can_id": 0.6470433857756537,
+      "inter_arrival_threshold": 0.6592814619390306,
+      "forest_3_fields": 0.81942621931848,
+      "attack_share_in_test": 0.3529566142243463,
+      "majority_baseline": 0.6470433857756537,
+      "scenario": 6
+    },
+    {
+      "unseen_can_id": 0.5291178522114194,
+      "inter_arrival_threshold": 0.7238821904938149,
+      "forest_3_fields": 0.8825748409230024,
+      "attack_share_in_test": 0.4708821477885806,
+      "majority_baseline": 0.5291178522114194,
+      "scenario": 7
+    },
+    {
+      "unseen_can_id": 0.5899172310007524,
+      "inter_arrival_threshold": 0.6732129420617006,
+      "forest_3_fields": 0.8507649862051668,
+      "attack_share_in_test": 0.41008276899924756,
+      "majority_baseline": 0.5899172310007524,
+      "scenario": 8
+    },
+    {
+      "unseen_can_id": 0.6908151749283792,
+      "inter_arrival_threshold": 0.6918135254796424,
+      "forest_3_fields": 0.8341580577017681,
+      "attack_share_in_test": 0.3091848250716208,
+      "majority_baseline": 0.6908151749283792,
+      "scenario": 9
+    },
+    {
+      "unseen_can_id": 0.6590960234030926,
+      "inter_arrival_threshold": 0.6719709390169415,
+      "forest_3_fields": 0.8331725978075675,
+      "attack_share_in_test": 0.34090397659690747,
+      "majority_baseline": 0.6590960234030925,
+      "scenario": 10
+    }
+  ]
+}

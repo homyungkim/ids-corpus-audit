@@ -1,0 +1,27 @@
+{
+ "policy": "grouped-500",
+ "corpus": "shadow",
+ "block_rows": 500,
+ "test_size": 0.3,
+ "seed": 4,
+ "held_out_groups": [
+  "Direct-Armed-Attack-1#0",
+  "Direct-Armed-Attack-10#0",
+  "Direct-Armed-Benign-1#1",
+  "Direct-Armed-Benign-2#1",
+  "Direct-Armed-Benign-5#0",
+  "Direct-Disarmed-Attack-2#1",
+  "Direct-Disarmed-Benign-1#0",
+  "Direct-Disarmed-Benign-1#1",
+  "Direct-Disarmed-Benign-3#1",
+  "Relay-Armed-Attack-2#0",
+  "Relay-Armed-Attack-3#0",
+  "Relay-Armed-Attack-4#0",
+  "Relay-Armed-Benign-2#1",
+  "Relay-Disarmed-Attack-2#0",
+  "Relay-Disarmed-Benign-1#0",
+  "Relay-Disarmed-Benign-2#1",
+  "Relay-Disarmed-Benign-3#0",
+  "Relay-Disarmed-Benign-3#2"
+ ]
+}

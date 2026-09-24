@@ -1,0 +1,14 @@
+{
+ "policy": "random-row",
+ "reading": "cyber-3-captureA",
+ "load_kwargs": {
+  "view": "cyber",
+  "capture": "A"
+ },
+ "block_rows": null,
+ "test_size": 0.3,
+ "seed": 0,
+ "n_rows": 33102,
+ "test_sha256_16": "e9f554825fb14497",
+ "note": "reconstructed by uav_cpids.apply_split; present for comparison against the grouped policies, not for building on"
+}

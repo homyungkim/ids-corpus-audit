@@ -1,0 +1,36 @@
+{
+  "corpus": "shadow",
+  "name": "HCRL SHADOW-GCS (PRDC 2025)",
+  "rows": 19976,
+  "captures": 35,
+  "features": 11,
+  "classes": {
+    "attack": 8060,
+    "benign": 11916
+  },
+  "load_digest": "048d46135118901b",
+  "test_size": 0.3,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "policies": {
+    "loco": {
+      "folds": 35,
+      "usable": 35,
+      "basis": "every class spans at least 14 captures"
+    },
+    "grouped-500": {
+      "groups": 59
+    },
+    "grouped-3000": {
+      "groups": 35
+    },
+    "random-row": {
+      "rows": 19976
+    }
+  }
+}

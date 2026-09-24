@@ -1,0 +1,17 @@
+{
+ "policy": "grouped-3000",
+ "corpus": "uavcan",
+ "block_rows": 3000,
+ "test_size": 0.3,
+ "seed": 2,
+ "held_out_groups": [
+  "scenario-03#1",
+  "scenario-04#0",
+  "scenario-07#0",
+  "scenario-07#2",
+  "scenario-08#1",
+  "scenario-09#0",
+  "scenario-09#2",
+  "scenario-10#1"
+ ]
+}

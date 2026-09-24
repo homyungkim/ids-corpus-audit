@@ -1,0 +1,352 @@
+[
+ {
+  "file": "Direct-Armed-Attack-1.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 1,
+  "packets": 9463,
+  "seconds": 263.99,
+  "mean_len": 79.4
+ },
+ {
+  "file": "Direct-Armed-Attack-10.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 10,
+  "packets": 4339,
+  "seconds": 165.03,
+  "mean_len": 80.1
+ },
+ {
+  "file": "Direct-Armed-Attack-2.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 2,
+  "packets": 6870,
+  "seconds": 201.03,
+  "mean_len": 79.5
+ },
+ {
+  "file": "Direct-Armed-Attack-3.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 3,
+  "packets": 8147,
+  "seconds": 239.67,
+  "mean_len": 79.5
+ },
+ {
+  "file": "Direct-Armed-Attack-4.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 4,
+  "packets": 5403,
+  "seconds": 212.99,
+  "mean_len": 80.5
+ },
+ {
+  "file": "Direct-Armed-Attack-5.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 5,
+  "packets": 4986,
+  "seconds": 216.56,
+  "mean_len": 80.5
+ },
+ {
+  "file": "Direct-Armed-Attack-6.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 6,
+  "packets": 2696,
+  "seconds": 114.09,
+  "mean_len": 80.4
+ },
+ {
+  "file": "Direct-Armed-Attack-7.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 7,
+  "packets": 4297,
+  "seconds": 186.29,
+  "mean_len": 80.5
+ },
+ {
+  "file": "Direct-Armed-Attack-8.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 8,
+  "packets": 3484,
+  "seconds": 178.14,
+  "mean_len": 80.7
+ },
+ {
+  "file": "Direct-Armed-Attack-9.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 9,
+  "packets": 6876,
+  "seconds": 195.56,
+  "mean_len": 79.6
+ },
+ {
+  "file": "Direct-Armed-Benign-1.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Benign",
+  "idx": 1,
+  "packets": 19320,
+  "seconds": 297.28,
+  "mean_len": 78.7
+ },
+ {
+  "file": "Direct-Armed-Benign-2.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Benign",
+  "idx": 2,
+  "packets": 19112,
+  "seconds": 294.02,
+  "mean_len": 78.4
+ },
+ {
+  "file": "Direct-Armed-Benign-3.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Benign",
+  "idx": 3,
+  "packets": 19235,
+  "seconds": 295.77,
+  "mean_len": 78.3
+ },
+ {
+  "file": "Direct-Armed-Benign-4.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Benign",
+  "idx": 4,
+  "packets": 19239,
+  "seconds": 296.02,
+  "mean_len": 78.7
+ },
+ {
+  "file": "Direct-Armed-Benign-5.pcapng",
+  "path": "Direct",
+  "state": "Armed",
+  "cls": "Benign",
+  "idx": 5,
+  "packets": 19279,
+  "seconds": 296.52,
+  "mean_len": 78.4
+ },
+ {
+  "file": "Direct-Disarmed-Attack-1.pcapng",
+  "path": "Direct",
+  "state": "Disarmed",
+  "cls": "Attack",
+  "idx": 1,
+  "packets": 21976,
+  "seconds": 1237.52,
+  "mean_len": 80.7
+ },
+ {
+  "file": "Direct-Disarmed-Attack-2.pcapng",
+  "path": "Direct",
+  "state": "Disarmed",
+  "cls": "Attack",
+  "idx": 2,
+  "packets": 22747,
+  "seconds": 1160.22,
+  "mean_len": 80.7
+ },
+ {
+  "file": "Direct-Disarmed-Attack-3.pcapng",
+  "path": "Direct",
+  "state": "Disarmed",
+  "cls": "Attack",
+  "idx": 3,
+  "packets": 23580,
+  "seconds": 1051.65,
+  "mean_len": 80.4
+ },
+ {
+  "file": "Direct-Disarmed-Benign-1.pcapng",
+  "path": "Direct",
+  "state": "Disarmed",
+  "cls": "Benign",
+  "idx": 1,
+  "packets": 33236,
+  "seconds": 526.96,
+  "mean_len": 77.8
+ },
+ {
+  "file": "Direct-Disarmed-Benign-2.pcapng",
+  "path": "Direct",
+  "state": "Disarmed",
+  "cls": "Benign",
+  "idx": 2,
+  "packets": 34289,
+  "seconds": 543.03,
+  "mean_len": 77.8
+ },
+ {
+  "file": "Direct-Disarmed-Benign-3.pcapng",
+  "path": "Direct",
+  "state": "Disarmed",
+  "cls": "Benign",
+  "idx": 3,
+  "packets": 33780,
+  "seconds": 535.78,
+  "mean_len": 77.8
+ },
+ {
+  "file": "Relay-Armed-Attack-1.pcapng",
+  "path": "Relay",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 1,
+  "packets": 5149,
+  "seconds": 271.78,
+  "mean_len": 81.0
+ },
+ {
+  "file": "Relay-Armed-Attack-2.pcapng",
+  "path": "Relay",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 2,
+  "packets": 14864,
+  "seconds": 279.36,
+  "mean_len": 78.9
+ },
+ {
+  "file": "Relay-Armed-Attack-3.pcapng",
+  "path": "Relay",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 3,
+  "packets": 11543,
+  "seconds": 270.74,
+  "mean_len": 79.1
+ },
+ {
+  "file": "Relay-Armed-Attack-4.pcapng",
+  "path": "Relay",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 4,
+  "packets": 8175,
+  "seconds": 273.37,
+  "mean_len": 79.8
+ },
+ {
+  "file": "Relay-Armed-Attack-5.pcapng",
+  "path": "Relay",
+  "state": "Armed",
+  "cls": "Attack",
+  "idx": 5,
+  "packets": 14161,
+  "seconds": 275.73,
+  "mean_len": 78.8
+ },
+ {
+  "file": "Relay-Armed-Benign-1.pcapng",
+  "path": "Relay",
+  "state": "Armed",
+  "cls": "Benign",
+  "idx": 1,
+  "packets": 30703,
+  "seconds": 294.28,
+  "mean_len": 78.0
+ },
+ {
+  "file": "Relay-Armed-Benign-2.pcapng",
+  "path": "Relay",
+  "state": "Armed",
+  "cls": "Benign",
+  "idx": 2,
+  "packets": 29555,
+  "seconds": 294.28,
+  "mean_len": 77.9
+ },
+ {
+  "file": "Relay-Armed-Benign-3.pcapng",
+  "path": "Relay",
+  "state": "Armed",
+  "cls": "Benign",
+  "idx": 3,
+  "packets": 29831,
+  "seconds": 294.96,
+  "mean_len": 77.9
+ },
+ {
+  "file": "Relay-Disarmed-Attack-1.pcapng",
+  "path": "Relay",
+  "state": "Disarmed",
+  "cls": "Attack",
+  "idx": 1,
+  "packets": 25983,
+  "seconds": 946.25,
+  "mean_len": 79.4
+ },
+ {
+  "file": "Relay-Disarmed-Attack-2.pcapng",
+  "path": "Relay",
+  "state": "Disarmed",
+  "cls": "Attack",
+  "idx": 2,
+  "packets": 25900,
+  "seconds": 624.97,
+  "mean_len": 78.1
+ },
+ {
+  "file": "Relay-Disarmed-Attack-3.pcapng",
+  "path": "Relay",
+  "state": "Disarmed",
+  "cls": "Attack",
+  "idx": 3,
+  "packets": 28411,
+  "seconds": 601.62,
+  "mean_len": 78.2
+ },
+ {
+  "file": "Relay-Disarmed-Benign-1.pcapng",
+  "path": "Relay",
+  "state": "Disarmed",
+  "cls": "Benign",
+  "idx": 1,
+  "packets": 29190,
+  "seconds": 290.34,
+  "mean_len": 77.4
+ },
+ {
+  "file": "Relay-Disarmed-Benign-2.pcapng",
+  "path": "Relay",
+  "state": "Disarmed",
+  "cls": "Benign",
+  "idx": 2,
+  "packets": 31861,
+  "seconds": 324.84,
+  "mean_len": 77.4
+ },
+ {
+  "file": "Relay-Disarmed-Benign-3.pcapng",
+  "path": "Relay",
+  "state": "Disarmed",
+  "cls": "Benign",
+  "idx": 3,
+  "packets": 33335,
+  "seconds": 327.51,
+  "mean_len": 77.4
+ }
+]

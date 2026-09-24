@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: >-
+  This is a repackaging. Cite the corpus it repackages, below. If the
+  repackaging itself was useful, mention it alongside.
+title: "uav-cpids-corrected: a documented repackaging of the UAV cyber-physical IDS corpus"
+type: dataset
+version: 1.0.0
+license: MIT
+references:
+  - type: article
+    authors:
+      - family-names: Hassler
+        given-names: Samuel Chase
+      - family-names: Mughal
+        given-names: Umair Ahmad
+      - family-names: Ismail
+        given-names: Muhammad
+    title: "Cyber-Physical Intrusion Detection System for Unmanned Aerial Vehicles"
+    journal: "IEEE Transactions on Intelligent Transportation Systems"
+    volume: 25
+    issue: 6
+    year: 2024
+    doi: 10.1109/TITS.2023.3339728

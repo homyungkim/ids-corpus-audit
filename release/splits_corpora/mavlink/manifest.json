@@ -1,0 +1,36 @@
+{
+  "corpus": "mavlink",
+  "name": "HCRL MAVLink message-id (GUIDE, C&S 2024)",
+  "rows": 19880,
+  "captures": 8,
+  "features": 128,
+  "classes": {
+    "attack": 14910,
+    "normal": 4970
+  },
+  "load_digest": "ff4f25e2b98486f6",
+  "test_size": 0.3,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "policies": {
+    "loco": {
+      "folds": 8,
+      "usable": 8,
+      "basis": "every class spans at least 2 captures"
+    },
+    "grouped-500": {
+      "groups": 40
+    },
+    "grouped-3000": {
+      "groups": 8
+    },
+    "random-row": {
+      "rows": 19880
+    }
+  }
+}

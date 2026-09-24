@@ -1,0 +1,17 @@
+{
+ "policy": "grouped-3000",
+ "corpus": "lumi",
+ "block_rows": 3000,
+ "test_size": 0.3,
+ "seed": 2,
+ "held_out_groups": [
+  "dataset03#1",
+  "dataset04#0",
+  "dataset07#0",
+  "dataset07#2",
+  "dataset08#1",
+  "dataset09#0",
+  "dataset09#2",
+  "dataset10#1"
+ ]
+}

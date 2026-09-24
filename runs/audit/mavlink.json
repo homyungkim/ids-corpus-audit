@@ -1,0 +1,48 @@
+{
+  "window": 128,
+  "take": 20000,
+  "results": [
+    {
+      "test": "binary",
+      "seed": 0,
+      "random_window_split": 1.0,
+      "positional_split": 1.0
+    },
+    {
+      "test": "binary",
+      "seed": 1,
+      "random_window_split": 1.0,
+      "positional_split": 1.0
+    },
+    {
+      "test": "binary",
+      "seed": 2,
+      "random_window_split": 1.0,
+      "positional_split": 1.0
+    },
+    {
+      "test": "same_class",
+      "pair": "normal vs normal2",
+      "random_window_split": 0.9792007380383277,
+      "positional_split": 0.9984905660377358
+    },
+    {
+      "test": "same_class",
+      "pair": "heartbeat vs heartbeat2",
+      "random_window_split": 0.8589759718203548,
+      "positional_split": 0.9984067085953878
+    },
+    {
+      "test": "same_class",
+      "pair": "ping vs ping2",
+      "random_window_split": 0.7056233488489118,
+      "positional_split": 0.6252410901467506
+    },
+    {
+      "test": "same_class",
+      "pair": "request vs request2",
+      "random_window_split": 0.9444374554451294,
+      "positional_split": 0.89916142557652
+    }
+  ]
+}

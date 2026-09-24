@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this audit tool or its artefacts, please cite the paper below."
+title: "ids-corpus-audit: a runnable structural audit for intrusion detection corpora"
+type: software
+license: MIT
+authors:
+  - family-names: Kim
+    given-names: Ho Myung
+    orcid: "https://orcid.org/0000-0002-1879-3403"
+    affiliation: "Department of AI Software, Kyungwoon University"
+    email: khm@ikw.ac.kr
+repository-code: "https://github.com/homyungkim/ids-corpus-audit"
+keywords:
+  - dataset audit
+  - benchmark validity
+  - capture identity
+  - data leakage
+  - intrusion detection
+  - reproducibility
+preferred-citation:
+  type: article
+  title: "Capture Identity as a Confounder in UAV Intrusion Detection Benchmarks: A Structural Audit of Five Public Corpora"
+  authors:
+    - family-names: Kim
+      given-names: Ho Myung
+      orcid: "https://orcid.org/0000-0002-1879-3403"
+  year: 2026
+  notes: "Under review."

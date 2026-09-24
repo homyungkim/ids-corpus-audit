@@ -1,0 +1,19 @@
+{
+ "policy": "grouped-3000",
+ "corpus": "shadow",
+ "block_rows": 3000,
+ "test_size": 0.3,
+ "seed": 4,
+ "held_out_groups": [
+  "Direct-Armed-Attack-10#0",
+  "Direct-Armed-Attack-7#0",
+  "Direct-Armed-Attack-8#0",
+  "Direct-Armed-Benign-1#0",
+  "Direct-Armed-Benign-2#0",
+  "Direct-Armed-Benign-4#0",
+  "Direct-Disarmed-Benign-1#0",
+  "Relay-Armed-Attack-5#0",
+  "Relay-Disarmed-Attack-1#0",
+  "Relay-Disarmed-Benign-1#0"
+ ]
+}

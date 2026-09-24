@@ -1,0 +1,97 @@
+{
+ "policy": "loco",
+ "corpus": "lumi",
+ "basis": "every class spans at least 10 captures",
+ "folds": [
+  {
+   "held_out_capture": "dataset01",
+   "usable": true,
+   "n_test": 4153,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "dataset02",
+   "usable": true,
+   "n_test": 6120,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "dataset03",
+   "usable": true,
+   "n_test": 4562,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "dataset04",
+   "usable": true,
+   "n_test": 4520,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "dataset05",
+   "usable": true,
+   "n_test": 5863,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "dataset06",
+   "usable": true,
+   "n_test": 6311,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "dataset07",
+   "usable": true,
+   "n_test": 6908,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "dataset08",
+   "usable": true,
+   "n_test": 6700,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "dataset09",
+   "usable": true,
+   "n_test": 6612,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "dataset10",
+   "usable": true,
+   "n_test": 8251,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  }
+ ]
+}
