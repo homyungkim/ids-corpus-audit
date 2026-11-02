@@ -1,0 +1,68 @@
+{
+ "policy": "loco",
+ "corpus": "hai",
+ "basis": "train1 and test3 share 43,201 identical rows (13 July 2020, 00:00-12:00) and are merged into one capture",
+ "folds": [
+  {
+   "held_out_capture": "test1",
+   "usable": true,
+   "n_test": 1958,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "test2",
+   "usable": true,
+   "n_test": 5382,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "test4",
+   "usable": true,
+   "n_test": 1782,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "test5",
+   "usable": true,
+   "n_test": 4163,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "train1+test3",
+   "usable": true,
+   "n_test": 14691,
+   "test_classes": [
+    "attack",
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "train2",
+   "usable": true,
+   "n_test": 10306,
+   "test_classes": [
+    "normal"
+   ]
+  },
+  {
+   "held_out_capture": "train3",
+   "usable": true,
+   "n_test": 21718,
+   "test_classes": [
+    "normal"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,767 @@
+{
+ "uavcan": {
+  "captures": {
+   "scenario-01": {
+    "frames": 207858,
+    "attack_share": 0.561999057048562,
+    "span_s": 179.061121,
+    "first_attack_s": 48.999641,
+    "last_attack_s": 158.998551,
+    "normal_before_first_attack": 22779,
+    "normal_after_last_attack": 11527,
+    "normal_in_attack_free_seconds": 44572,
+    "normal_total": 91042,
+    "t0": 0.0,
+    "t1": 179.061121
+   },
+   "scenario-02": {
+    "frames": 134170,
+    "attack_share": 0.23798166505179996,
+    "span_s": 180.033413,
+    "first_attack_s": 49.979994,
+    "last_attack_s": 159.979953,
+    "normal_before_first_attack": 24358,
+    "normal_after_last_attack": 12427,
+    "normal_in_attack_free_seconds": 47683,
+    "normal_total": 102240,
+    "t0": 0.0,
+    "t1": 180.033413
+   },
+   "scenario-03": {
+    "frames": 197479,
+    "attack_share": 0.48550985168043187,
+    "span_s": 179.740569,
+    "first_attack_s": 49.683229,
+    "last_attack_s": 159.682346,
+    "normal_before_first_attack": 24377,
+    "normal_after_last_attack": 12327,
+    "normal_in_attack_free_seconds": 47507,
+    "normal_total": 101601,
+    "t0": 0.0,
+    "t1": 179.740569
+   },
+   "scenario-04": {
+    "frames": 133374,
+    "attack_share": 0.21870829397033906,
+    "span_s": 178.573399,
+    "first_attack_s": 48.515528,
+    "last_attack_s": 158.514592,
+    "normal_before_first_attack": 23612,
+    "normal_after_last_attack": 12215,
+    "normal_in_attack_free_seconds": 46677,
+    "normal_total": 104204,
+    "t0": 0.0,
+    "t1": 178.573399
+   },
+   "scenario-05": {
+    "frames": 180608,
+    "attack_share": 0.2802312189936215,
+    "span_s": 210.041283,
+    "first_attack_s": 59.989076,
+    "last_attack_s": 189.985921,
+    "normal_before_first_attack": 35310,
+    "normal_after_last_attack": 12237,
+    "normal_in_attack_free_seconds": 64656,
+    "normal_total": 129996,
+    "t0": 0.0,
+    "t1": 210.041283
+   },
+   "scenario-06": {
+    "frames": 241321,
+    "attack_share": 0.3360171721483004,
+    "span_s": 280.043837,
+    "first_attack_s": 59.989967,
+    "last_attack_s": 259.989246,
+    "normal_before_first_attack": 31759,
+    "normal_after_last_attack": 11539,
+    "normal_in_attack_free_seconds": 64298,
+    "normal_total": 160233,
+    "t0": 0.0,
+    "t1": 280.043837
+   },
+   "scenario-07": {
+    "frames": 234162,
+    "attack_share": 0.3955039673388509,
+    "span_s": 240.041077,
+    "first_attack_s": 49.988001,
+    "last_attack_s": 219.986961,
+    "normal_before_first_attack": 28982,
+    "normal_after_last_attack": 12217,
+    "normal_in_attack_free_seconds": 57702,
+    "normal_total": 141550,
+    "t0": 0.0,
+    "t1": 240.041077
+   },
+   "scenario-08": {
+    "frames": 265800,
+    "attack_share": 0.43381489841986454,
+    "span_s": 250.043272,
+    "first_attack_s": 59.990336,
+    "last_attack_s": 229.986751,
+    "normal_before_first_attack": 35321,
+    "normal_after_last_attack": 12154,
+    "normal_in_attack_free_seconds": 63984,
+    "normal_total": 150492,
+    "t0": 0.0,
+    "t1": 250.043272
+   },
+   "scenario-09": {
+    "frames": 230378,
+    "attack_share": 0.29192023543914786,
+    "span_s": 270.0383,
+    "first_attack_s": 59.98634,
+    "last_attack_s": 249.983082,
+    "normal_before_first_attack": 35362,
+    "normal_after_last_attack": 12280,
+    "normal_in_attack_free_seconds": 64182,
+    "normal_total": 163126,
+    "t0": 0.0,
+    "t1": 270.0383
+   },
+   "scenario-10": {
+    "frames": 207380,
+    "attack_share": 0.36575368888031634,
+    "span_s": 220.040176,
+    "first_attack_s": 59.989749,
+    "last_attack_s": 199.986557,
+    "normal_before_first_attack": 35351,
+    "normal_after_last_attack": 12272,
+    "normal_in_attack_free_seconds": 58448,
+    "normal_total": 131530,
+    "t0": 0.0,
+    "t1": 220.040176
+   }
+  },
+  "overlaps": [
+   {
+    "a": "scenario-01",
+    "b": "scenario-02",
+    "overlap": 179.061121
+   },
+   {
+    "a": "scenario-01",
+    "b": "scenario-03",
+    "overlap": 179.061121
+   },
+   {
+    "a": "scenario-01",
+    "b": "scenario-04",
+    "overlap": 178.573399
+   },
+   {
+    "a": "scenario-01",
+    "b": "scenario-05",
+    "overlap": 179.061121
+   },
+   {
+    "a": "scenario-01",
+    "b": "scenario-06",
+    "overlap": 179.061121
+   },
+   {
+    "a": "scenario-01",
+    "b": "scenario-07",
+    "overlap": 179.061121
+   },
+   {
+    "a": "scenario-01",
+    "b": "scenario-08",
+    "overlap": 179.061121
+   },
+   {
+    "a": "scenario-01",
+    "b": "scenario-09",
+    "overlap": 179.061121
+   },
+   {
+    "a": "scenario-01",
+    "b": "scenario-10",
+    "overlap": 179.061121
+   },
+   {
+    "a": "scenario-02",
+    "b": "scenario-03",
+    "overlap": 179.740569
+   },
+   {
+    "a": "scenario-02",
+    "b": "scenario-04",
+    "overlap": 178.573399
+   },
+   {
+    "a": "scenario-02",
+    "b": "scenario-05",
+    "overlap": 180.033413
+   },
+   {
+    "a": "scenario-02",
+    "b": "scenario-06",
+    "overlap": 180.033413
+   },
+   {
+    "a": "scenario-02",
+    "b": "scenario-07",
+    "overlap": 180.033413
+   },
+   {
+    "a": "scenario-02",
+    "b": "scenario-08",
+    "overlap": 180.033413
+   },
+   {
+    "a": "scenario-02",
+    "b": "scenario-09",
+    "overlap": 180.033413
+   },
+   {
+    "a": "scenario-02",
+    "b": "scenario-10",
+    "overlap": 180.033413
+   },
+   {
+    "a": "scenario-03",
+    "b": "scenario-04",
+    "overlap": 178.573399
+   },
+   {
+    "a": "scenario-03",
+    "b": "scenario-05",
+    "overlap": 179.740569
+   },
+   {
+    "a": "scenario-03",
+    "b": "scenario-06",
+    "overlap": 179.740569
+   },
+   {
+    "a": "scenario-03",
+    "b": "scenario-07",
+    "overlap": 179.740569
+   },
+   {
+    "a": "scenario-03",
+    "b": "scenario-08",
+    "overlap": 179.740569
+   },
+   {
+    "a": "scenario-03",
+    "b": "scenario-09",
+    "overlap": 179.740569
+   },
+   {
+    "a": "scenario-03",
+    "b": "scenario-10",
+    "overlap": 179.740569
+   },
+   {
+    "a": "scenario-04",
+    "b": "scenario-05",
+    "overlap": 178.573399
+   },
+   {
+    "a": "scenario-04",
+    "b": "scenario-06",
+    "overlap": 178.573399
+   },
+   {
+    "a": "scenario-04",
+    "b": "scenario-07",
+    "overlap": 178.573399
+   },
+   {
+    "a": "scenario-04",
+    "b": "scenario-08",
+    "overlap": 178.573399
+   },
+   {
+    "a": "scenario-04",
+    "b": "scenario-09",
+    "overlap": 178.573399
+   },
+   {
+    "a": "scenario-04",
+    "b": "scenario-10",
+    "overlap": 178.573399
+   },
+   {
+    "a": "scenario-05",
+    "b": "scenario-06",
+    "overlap": 210.041283
+   },
+   {
+    "a": "scenario-05",
+    "b": "scenario-07",
+    "overlap": 210.041283
+   },
+   {
+    "a": "scenario-05",
+    "b": "scenario-08",
+    "overlap": 210.041283
+   },
+   {
+    "a": "scenario-05",
+    "b": "scenario-09",
+    "overlap": 210.041283
+   },
+   {
+    "a": "scenario-05",
+    "b": "scenario-10",
+    "overlap": 210.041283
+   },
+   {
+    "a": "scenario-06",
+    "b": "scenario-07",
+    "overlap": 240.041077
+   },
+   {
+    "a": "scenario-06",
+    "b": "scenario-08",
+    "overlap": 250.043272
+   },
+   {
+    "a": "scenario-06",
+    "b": "scenario-09",
+    "overlap": 270.0383
+   },
+   {
+    "a": "scenario-06",
+    "b": "scenario-10",
+    "overlap": 220.040176
+   },
+   {
+    "a": "scenario-07",
+    "b": "scenario-08",
+    "overlap": 240.041077
+   },
+   {
+    "a": "scenario-07",
+    "b": "scenario-09",
+    "overlap": 240.041077
+   },
+   {
+    "a": "scenario-07",
+    "b": "scenario-10",
+    "overlap": 220.040176
+   },
+   {
+    "a": "scenario-08",
+    "b": "scenario-09",
+    "overlap": 250.043272
+   },
+   {
+    "a": "scenario-08",
+    "b": "scenario-10",
+    "overlap": 220.040176
+   },
+   {
+    "a": "scenario-09",
+    "b": "scenario-10",
+    "overlap": 220.040176
+   }
+  ]
+ },
+ "lumi": {
+  "captures": {
+   "dataset01": {
+    "frames": 140430,
+    "attack_share": 0.22765790785444706,
+    "span_s": 180.043983,
+    "first_attack_s": 19.988357,
+    "last_attack_s": 149.986983,
+    "normal_before_first_attack": 12604,
+    "normal_after_last_attack": 18491,
+    "normal_in_attack_free_seconds": 54484,
+    "normal_total": 108460,
+    "t0": 0.0,
+    "t1": 180.043983
+   },
+   "dataset02": {
+    "frames": 204692,
+    "attack_share": 0.4728763214976648,
+    "span_s": 180.045332,
+    "first_attack_s": 19.988564,
+    "last_attack_s": 149.987265,
+    "normal_before_first_attack": 12416,
+    "normal_after_last_attack": 18640,
+    "normal_in_attack_free_seconds": 54443,
+    "normal_total": 107898,
+    "t0": 0.0,
+    "t1": 180.045332
+   },
+   "dataset03": {
+    "frames": 152278,
+    "attack_share": 0.29886129316119203,
+    "span_s": 180.042709,
+    "first_attack_s": 19.988053,
+    "last_attack_s": 149.984581,
+    "normal_before_first_attack": 10940,
+    "normal_after_last_attack": 17555,
+    "normal_in_attack_free_seconds": 50781,
+    "normal_total": 106768,
+    "t0": 0.0,
+    "t1": 180.042709
+   },
+   "dataset04": {
+    "frames": 154861,
+    "attack_share": 0.32853978729312094,
+    "span_s": 180.034893,
+    "first_attack_s": 19.987156,
+    "last_attack_s": 149.985953,
+    "normal_before_first_attack": 11681,
+    "normal_after_last_attack": 17641,
+    "normal_in_attack_free_seconds": 51567,
+    "normal_total": 103983,
+    "t0": 0.0,
+    "t1": 180.034893
+   },
+   "dataset05": {
+    "frames": 200957,
+    "attack_share": 0.4183531800335395,
+    "span_s": 210.041156,
+    "first_attack_s": 19.986944,
+    "last_attack_s": 189.984269,
+    "normal_before_first_attack": 10782,
+    "normal_after_last_attack": 11394,
+    "normal_in_attack_free_seconds": 32240,
+    "normal_total": 116886,
+    "t0": 0.0,
+    "t1": 210.041156
+   },
+   "dataset06": {
+    "frames": 210863,
+    "attack_share": 0.4481203435405927,
+    "span_s": 210.040364,
+    "first_attack_s": 19.986782,
+    "last_attack_s": 189.984743,
+    "normal_before_first_attack": 10790,
+    "normal_after_last_attack": 11594,
+    "normal_in_attack_free_seconds": 32599,
+    "normal_total": 116371,
+    "t0": 0.0,
+    "t1": 210.040364
+   },
+   "dataset07": {
+    "frames": 232084,
+    "attack_share": 0.5141328139811447,
+    "span_s": 210.043676,
+    "first_attack_s": 19.988917,
+    "last_attack_s": 189.98698,
+    "normal_before_first_attack": 11532,
+    "normal_after_last_attack": 11533,
+    "normal_in_attack_free_seconds": 33293,
+    "normal_total": 112762,
+    "t0": 0.0,
+    "t1": 210.043676
+   },
+   "dataset08": {
+    "frames": 223148,
+    "attack_share": 0.47301342606700486,
+    "span_s": 210.045229,
+    "first_attack_s": 19.989929,
+    "last_attack_s": 189.987574,
+    "normal_before_first_attack": 8333,
+    "normal_after_last_attack": 11608,
+    "normal_in_attack_free_seconds": 30210,
+    "normal_total": 117596,
+    "t0": 0.0,
+    "t1": 210.045229
+   },
+   "dataset09": {
+    "frames": 221691,
+    "attack_share": 0.47932482599654475,
+    "span_s": 210.043583,
+    "first_attack_s": 19.983953,
+    "last_attack_s": 189.983093,
+    "normal_before_first_attack": 10031,
+    "normal_after_last_attack": 11491,
+    "normal_in_attack_free_seconds": 31708,
+    "normal_total": 115429,
+    "t0": 0.0,
+    "t1": 210.043583
+   },
+   "dataset10": {
+    "frames": 277237,
+    "attack_share": 0.5959702348532122,
+    "span_s": 210.040863,
+    "first_attack_s": 19.988029,
+    "last_attack_s": 189.985856,
+    "normal_before_first_attack": 10011,
+    "normal_after_last_attack": 11439,
+    "normal_in_attack_free_seconds": 31673,
+    "normal_total": 112012,
+    "t0": 0.0,
+    "t1": 210.040863
+   }
+  },
+  "overlaps": [
+   {
+    "a": "dataset01",
+    "b": "dataset02",
+    "overlap": 180.043983
+   },
+   {
+    "a": "dataset01",
+    "b": "dataset03",
+    "overlap": 180.042709
+   },
+   {
+    "a": "dataset01",
+    "b": "dataset04",
+    "overlap": 180.034893
+   },
+   {
+    "a": "dataset01",
+    "b": "dataset05",
+    "overlap": 180.043983
+   },
+   {
+    "a": "dataset01",
+    "b": "dataset06",
+    "overlap": 180.043983
+   },
+   {
+    "a": "dataset01",
+    "b": "dataset07",
+    "overlap": 180.043983
+   },
+   {
+    "a": "dataset01",
+    "b": "dataset08",
+    "overlap": 180.043983
+   },
+   {
+    "a": "dataset01",
+    "b": "dataset09",
+    "overlap": 180.043983
+   },
+   {
+    "a": "dataset01",
+    "b": "dataset10",
+    "overlap": 180.043983
+   },
+   {
+    "a": "dataset02",
+    "b": "dataset03",
+    "overlap": 180.042709
+   },
+   {
+    "a": "dataset02",
+    "b": "dataset04",
+    "overlap": 180.034893
+   },
+   {
+    "a": "dataset02",
+    "b": "dataset05",
+    "overlap": 180.045332
+   },
+   {
+    "a": "dataset02",
+    "b": "dataset06",
+    "overlap": 180.045332
+   },
+   {
+    "a": "dataset02",
+    "b": "dataset07",
+    "overlap": 180.045332
+   },
+   {
+    "a": "dataset02",
+    "b": "dataset08",
+    "overlap": 180.045332
+   },
+   {
+    "a": "dataset02",
+    "b": "dataset09",
+    "overlap": 180.045332
+   },
+   {
+    "a": "dataset02",
+    "b": "dataset10",
+    "overlap": 180.045332
+   },
+   {
+    "a": "dataset03",
+    "b": "dataset04",
+    "overlap": 180.034893
+   },
+   {
+    "a": "dataset03",
+    "b": "dataset05",
+    "overlap": 180.042709
+   },
+   {
+    "a": "dataset03",
+    "b": "dataset06",
+    "overlap": 180.042709
+   },
+   {
+    "a": "dataset03",
+    "b": "dataset07",
+    "overlap": 180.042709
+   },
+   {
+    "a": "dataset03",
+    "b": "dataset08",
+    "overlap": 180.042709
+   },
+   {
+    "a": "dataset03",
+    "b": "dataset09",
+    "overlap": 180.042709
+   },
+   {
+    "a": "dataset03",
+    "b": "dataset10",
+    "overlap": 180.042709
+   },
+   {
+    "a": "dataset04",
+    "b": "dataset05",
+    "overlap": 180.034893
+   },
+   {
+    "a": "dataset04",
+    "b": "dataset06",
+    "overlap": 180.034893
+   },
+   {
+    "a": "dataset04",
+    "b": "dataset07",
+    "overlap": 180.034893
+   },
+   {
+    "a": "dataset04",
+    "b": "dataset08",
+    "overlap": 180.034893
+   },
+   {
+    "a": "dataset04",
+    "b": "dataset09",
+    "overlap": 180.034893
+   },
+   {
+    "a": "dataset04",
+    "b": "dataset10",
+    "overlap": 180.034893
+   },
+   {
+    "a": "dataset05",
+    "b": "dataset06",
+    "overlap": 210.040364
+   },
+   {
+    "a": "dataset05",
+    "b": "dataset07",
+    "overlap": 210.041156
+   },
+   {
+    "a": "dataset05",
+    "b": "dataset08",
+    "overlap": 210.041156
+   },
+   {
+    "a": "dataset05",
+    "b": "dataset09",
+    "overlap": 210.041156
+   },
+   {
+    "a": "dataset05",
+    "b": "dataset10",
+    "overlap": 210.040863
+   },
+   {
+    "a": "dataset06",
+    "b": "dataset07",
+    "overlap": 210.040364
+   },
+   {
+    "a": "dataset06",
+    "b": "dataset08",
+    "overlap": 210.040364
+   },
+   {
+    "a": "dataset06",
+    "b": "dataset09",
+    "overlap": 210.040364
+   },
+   {
+    "a": "dataset06",
+    "b": "dataset10",
+    "overlap": 210.040364
+   },
+   {
+    "a": "dataset07",
+    "b": "dataset08",
+    "overlap": 210.043676
+   },
+   {
+    "a": "dataset07",
+    "b": "dataset09",
+    "overlap": 210.043583
+   },
+   {
+    "a": "dataset07",
+    "b": "dataset10",
+    "overlap": 210.040863
+   },
+   {
+    "a": "dataset08",
+    "b": "dataset09",
+    "overlap": 210.043583
+   },
+   {
+    "a": "dataset08",
+    "b": "dataset10",
+    "overlap": 210.040863
+   },
+   {
+    "a": "dataset09",
+    "b": "dataset10",
+    "overlap": 210.040863
+   }
+  ]
+ },
+ "hai": {
+  "spans": {
+   "test1": [
+    "2020-07-07 15:00:00",
+    "2020-07-08 03:00:00"
+   ],
+   "test2": [
+    "2020-07-09 15:00:00",
+    "2020-07-11 00:00:00"
+   ],
+   "test3": [
+    "2020-07-13 00:00:00",
+    "2020-07-14 06:00:00"
+   ],
+   "test4": [
+    "2020-07-28 12:00:00",
+    "2020-07-28 23:00:00"
+   ],
+   "test5": [
+    "2020-07-30 10:50:00",
+    "2020-07-31 12:30:00"
+   ],
+   "train1": [
+    "2020-07-11 00:00:00",
+    "2020-07-13 12:00:00"
+   ],
+   "train2": [
+    "2020-07-31 22:00:00",
+    "2020-08-03 13:00:00"
+   ],
+   "train3": [
+    "2020-08-04 22:00:00",
+    "2020-08-10 11:00:00"
+   ]
+  },
+  "overlaps": [
+   {
+    "a": "test3",
+    "b": "train1",
+    "overlap": 43200.0
+   }
+  ]
+ }
+}

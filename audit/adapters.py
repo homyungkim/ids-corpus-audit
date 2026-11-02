@@ -108,15 +108,24 @@ def hassler(path: str, max_records: int = 40000) -> Records:
                                                for b in blocks}),
                 "benign_class": "benign",
                 "attack_type_per_record": True},
-        views={"shared_clock": False,
-               "clock_detail": "cyber and physical are separate row blocks "
-                               "with no sample-level correspondence; the FDI "
-                               "physical block has no timestamp column",
+        # Revision: the first release hard-coded False here. Measured on the
+        # timestamps, segments 0-5 share a sub-second time-of-day clock (no
+        # date); in segments 6-7 both views use one-second epoch time but the
+        # physical clock runs about 18,000 s behind the cyber clock; the FDI
+        # physical block has no timestamp. The clock is therefore shared in
+        # part of the corpus only.
+        views={"shared_clock": "partial",
+               "clock_detail": "shared in segments 0-5 (time of day, no "
+                               "date); offset by about 18,000 s in segments "
+                               "6-7; absent from the FDI physical block",
                "pairing_cost": [
                    {"class": "benign", "share_invented": 0.545},
                    {"class": "dos", "share_invented": 0.917},
                    {"class": "replay", "share_invented": 0.919}],
-               "fusion_null": {"gain_paired": 0.3542, "gain_null_class": 0.3411}},
+               # Revision: session-held-out evaluation, balanced accuracy,
+               # with label-free pairings added (revision/rev_fusion.py)
+               "fusion_null": {"gain_paired": 0.093, "gain_null_class": 0.188,
+                               "gain_time_pairing": -0.008}},
     )
 
 

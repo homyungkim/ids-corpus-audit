@@ -25,19 +25,24 @@ them.
 The index below is normalised so corpora with different capture counts are
 comparable: 0 is chance, 1 names every capture.
 
-| Corpus | Captures | Min captures per class | Fingerprint index | Leave-one-capture-out |
-|---|---:|---:|---|---|
-| Hassler et al. (T-ITS 2024) | 5 | 1 | 0.918 ± 0.002 | **undefined** |
-| MAVLink (GUIDE) | 8 | 2 | 0.712 ± 0.006 | 8 folds, unstable |
-| HAI 21.03 (ICS) | 8 | 5 | 0.959 ± 0.001 | 8 folds |
-| UAVCAN 2022 | 10 | 10 | 0.134 ± 0.003 | 10 folds |
-| UAVCAN 2026 (LUMI) | 10 | 10 | 0.093 ± 0.004 | 10 folds |
-| SHADOW-GCS | 35 | 14 | 0.588 ± 0.005 | 35 folds |
+| Corpus | Captures | Min captures per class (κ) | Fingerprint index ι | Capture effect, mean of 5 models (range) |
+|---|---|---:|---|---|
+| Hassler et al. (T-ITS 2024) | 29 sessions | 2 | 0.807 | 0.418 (0.343 to 0.485) |
+| MAVLink (GUIDE) | 8 files | 2 | 0.713 | 0.219 (0.046 to 0.508) |
+| HAI 21.03 (ICS) | 8 files | 5 | 0.959 | 0.097 (0.019 to 0.219) |
+| UAVCAN 2022 | 10 files | 10 | 0.137 | 0.011 (0.002 to 0.027) |
+| UAVCAN 2026 (LUMI) | 10 files | 10 | 0.096 | 0.002 (-0.003 to 0.008) |
+| SHADOW-GCS | 35 files | 14 | 0.587 | 0.001 (-0.007 to 0.004) |
 
-A high index is not by itself a defect. It becomes one only when a class
-occupies a single capture. HAI makes that clearest: its index is the highest in
-the set, and holding out a whole capture still costs it almost nothing, because
-every class spans five captures.
+Capture effect: balanced accuracy under a random-row split minus balanced accuracy of the pooled leave-one-capture-out predictions. Values from the revised manuscript (`runs/revision/`); the first submission's values remain in `runs/audit/`. For the Hassler corpus, captures are recording sessions recovered from timestamp gaps; with class blocks as captures the leave-one-capture-out policy is undefined. Across the six corpora the rank correlation between κ and the mean capture effect is -0.97. See `revision/README.md` for every script added in revision.
+
+A high index is not by itself a defect. What the fingerprint costs depends on
+how the classes are spread over captures: SHADOW-GCS has a substantial index and
+almost no capture effect, because every class spans fourteen or more captures,
+while the Hassler corpus, whose scarcest class spans two sessions and two of
+whose classes each sit in an instrumentation configuration of their own, loses
+the most. HAI has the highest index and a moderate effect, partly because each
+of its attack captures holds attacks found in no other capture.
 
 ---
 
@@ -117,6 +122,9 @@ runs/audit/                 the JSON and image outputs the paper cites
   split_cost.json           four split policies, accuracy and balanced
   fingerprint_variance.json the index with its spread over twenty-four runs
   fig_fingerprint.*         Figure 2, and graphical_abstract.* alongside it
+runs/revision/              outputs of the measurements added in revision
+                            (see revision/README.md)
+revision/                   the scripts that produce them
 ```
 
 ## Two things the tool does on purpose

@@ -407,7 +407,8 @@ def E1_shared_clock(r: Records) -> Result:
     v = r.views.get("shared_clock")
     if v is None:
         return Result("E1", "the two views share a clock", NA)
-    return Result("E1", "the two views share a clock", PASS if v else FAIL,
+    st = WARN if v == "partial" else (PASS if v else FAIL)
+    return Result("E1", "the two views share a clock", st,
                   r.views.get("clock_detail", str(v)))
 
 
@@ -426,12 +427,16 @@ def E3_fusion_null(r: Records) -> Result:
     if v is None:
         return Result("E3", "the fusion gain fails its null control", NA)
     gain, null = v["gain_paired"], v["gain_null_class"]
-    survives = null >= 0.5 * gain
+    free = v.get("gain_time_pairing")
+    survives = null >= 0.5 * gain or (free is not None and free < 0.5 * gain)
+    val = f"gain {gain:+.3f}, null {null:+.3f}"
+    if free is not None:
+        val += f", label-free pairing {free:+.3f}"
     return Result("E3", "the fusion gain fails its null control",
-                  FAIL if survives else PASS,
-                  f"gain {gain:+.3f}, null {null:+.3f}",
-                  "Giving each class another class's second view reproduces "
-                  "the gain; it measures the capture." if survives else "")
+                  FAIL if survives else PASS, val,
+                  "The gain appears only when the pairing rule reads the "
+                  "label; a pairing that never reads it adds nothing."
+                  if survives else "")
 
 
 # ---------------------------------------------------------------------------

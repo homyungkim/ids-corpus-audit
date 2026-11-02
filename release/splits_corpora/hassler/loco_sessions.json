@@ -1,0 +1,239 @@
+{
+ "policy": "loco",
+ "corpus": "hassler",
+ "basis": "captures are recording sessions inferred from gaps of more than 60 s in the cyber timestamps (revision/rev_common.py); every class spans at least 2 sessions",
+ "folds": [
+  {
+   "held_out_capture": "s000",
+   "usable": true,
+   "n_test": 1149,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "s001",
+   "usable": true,
+   "n_test": 1554,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "s002",
+   "usable": true,
+   "n_test": 361,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "s003",
+   "usable": true,
+   "n_test": 916,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "s004",
+   "usable": true,
+   "n_test": 465,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "s005",
+   "usable": true,
+   "n_test": 330,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "s006",
+   "usable": true,
+   "n_test": 522,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "s007",
+   "usable": true,
+   "n_test": 1083,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "s008",
+   "usable": true,
+   "n_test": 187,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "s009",
+   "usable": true,
+   "n_test": 1079,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "s010",
+   "usable": true,
+   "n_test": 1081,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "s011",
+   "usable": true,
+   "n_test": 181,
+   "test_classes": [
+    "benign"
+   ]
+  },
+  {
+   "held_out_capture": "s012",
+   "usable": true,
+   "n_test": 7301,
+   "test_classes": [
+    "dos"
+   ]
+  },
+  {
+   "held_out_capture": "s013",
+   "usable": true,
+   "n_test": 1815,
+   "test_classes": [
+    "dos"
+   ]
+  },
+  {
+   "held_out_capture": "s014",
+   "usable": true,
+   "n_test": 1954,
+   "test_classes": [
+    "dos"
+   ]
+  },
+  {
+   "held_out_capture": "s015",
+   "usable": true,
+   "n_test": 5802,
+   "test_classes": [
+    "replay"
+   ]
+  },
+  {
+   "held_out_capture": "s016",
+   "usable": true,
+   "n_test": 2499,
+   "test_classes": [
+    "replay"
+   ]
+  },
+  {
+   "held_out_capture": "s017",
+   "usable": true,
+   "n_test": 235,
+   "test_classes": [
+    "replay"
+   ]
+  },
+  {
+   "held_out_capture": "s018",
+   "usable": true,
+   "n_test": 245,
+   "test_classes": [
+    "replay"
+   ]
+  },
+  {
+   "held_out_capture": "s019",
+   "usable": true,
+   "n_test": 291,
+   "test_classes": [
+    "replay"
+   ]
+  },
+  {
+   "held_out_capture": "s020",
+   "usable": true,
+   "n_test": 490,
+   "test_classes": [
+    "replay"
+   ]
+  },
+  {
+   "held_out_capture": "s021",
+   "usable": true,
+   "n_test": 1792,
+   "test_classes": [
+    "replay"
+   ]
+  },
+  {
+   "held_out_capture": "s022",
+   "usable": true,
+   "n_test": 965,
+   "test_classes": [
+    "evil_twin"
+   ]
+  },
+  {
+   "held_out_capture": "s023",
+   "usable": true,
+   "n_test": 1280,
+   "test_classes": [
+    "evil_twin"
+   ]
+  },
+  {
+   "held_out_capture": "s024",
+   "usable": true,
+   "n_test": 1266,
+   "test_classes": [
+    "evil_twin"
+   ]
+  },
+  {
+   "held_out_capture": "s025",
+   "usable": true,
+   "n_test": 694,
+   "test_classes": [
+    "evil_twin"
+   ]
+  },
+  {
+   "held_out_capture": "s026",
+   "usable": true,
+   "n_test": 1161,
+   "test_classes": [
+    "evil_twin"
+   ]
+  },
+  {
+   "held_out_capture": "s027",
+   "usable": true,
+   "n_test": 2345,
+   "test_classes": [
+    "fdi"
+   ]
+  },
+  {
+   "held_out_capture": "s028",
+   "usable": true,
+   "n_test": 957,
+   "test_classes": [
+    "fdi"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,216 @@
+{
+ "block": [
+  {
+   "code": "A1",
+   "status": "FAIL",
+   "value": "documented 'single CSV, 37 cyber / 16 physical features', actually 'five concatenated exports, three schemas'"
+  },
+  {
+   "code": "A2",
+   "status": "FAIL",
+   "value": "10 distinct header rows"
+  },
+  {
+   "code": "A3",
+   "status": "WARN",
+   "value": "5 distinct widths: 17..38"
+  },
+  {
+   "code": "A4",
+   "status": "PASS",
+   "value": "0 of 54,774 unparsed (0.00%)"
+  },
+  {
+   "code": "A5",
+   "status": "n/a",
+   "value": null
+  },
+  {
+   "code": "A6",
+   "status": "n/a",
+   "value": null
+  },
+  {
+   "code": "B1",
+   "status": "FAIL",
+   "value": "33,102 of 54,774 (60.4%)"
+  },
+  {
+   "code": "B2",
+   "status": "WARN",
+   "value": "6 spellings, collisions {'dos': ['DoS', 'DoS attack']}"
+  },
+  {
+   "code": "B3",
+   "status": "PASS",
+   "value": "5 of 5"
+  },
+  {
+   "code": "B4",
+   "status": "PASS",
+   "value": null
+  },
+  {
+   "code": "C1",
+   "status": "FAIL",
+   "value": "{'benign': 1, 'dos': 1, 'evil_twin': 1, 'fdi': 1, 'replay': 1}"
+  },
+  {
+   "code": "C2",
+   "status": "WARN",
+   "value": "1 of 5 captures"
+  },
+  {
+   "code": "C3",
+   "status": "FAIL",
+   "value": "min 1 captures in a class"
+  },
+  {
+   "code": "C4",
+   "status": "FAIL",
+   "value": "index 0.914  (0.9309 on 5-way, chance 0.2000)"
+  },
+  {
+   "code": "C5",
+   "status": "FAIL",
+   "value": "cannot be measured"
+  },
+  {
+   "code": "D1",
+   "status": "FAIL",
+   "value": "random 0.9331 vs contiguous blocks 0.5898 (gap +0.3433)"
+  },
+  {
+   "code": "D2",
+   "status": "PASS",
+   "value": "shallow model 0.5404 +/- 0.039, majority 0.3859"
+  },
+  {
+   "code": "D3",
+   "status": "WARN",
+   "value": "False"
+  },
+  {
+   "code": "E1",
+   "status": "WARN",
+   "value": "shared in segments 0-5 (time of day, no date); offset by about 18,000 s in segments 6-7; absent from the FDI physical block"
+  },
+  {
+   "code": "E2",
+   "status": "FAIL",
+   "value": "worst class 91.9% invented"
+  },
+  {
+   "code": "E3",
+   "status": "FAIL",
+   "value": "gain +0.093, null +0.188, label-free pairing -0.008"
+  }
+ ],
+ "session": [
+  {
+   "code": "A1",
+   "status": "FAIL",
+   "value": "documented 'single CSV, 37 cyber / 16 physical features', actually 'five concatenated exports, three schemas'"
+  },
+  {
+   "code": "A2",
+   "status": "FAIL",
+   "value": "10 distinct header rows"
+  },
+  {
+   "code": "A3",
+   "status": "WARN",
+   "value": "5 distinct widths: 17..38"
+  },
+  {
+   "code": "A4",
+   "status": "PASS",
+   "value": "0 of 54,774 unparsed (0.00%)"
+  },
+  {
+   "code": "A5",
+   "status": "n/a",
+   "value": null
+  },
+  {
+   "code": "A6",
+   "status": "n/a",
+   "value": null
+  },
+  {
+   "code": "B1",
+   "status": "FAIL",
+   "value": "33,102 of 54,774 (60.4%)"
+  },
+  {
+   "code": "B2",
+   "status": "WARN",
+   "value": "6 spellings, collisions {'dos': ['DoS', 'DoS attack']}"
+  },
+  {
+   "code": "B3",
+   "status": "PASS",
+   "value": "5 of 5"
+  },
+  {
+   "code": "B4",
+   "status": "PASS",
+   "value": null
+  },
+  {
+   "code": "C1",
+   "status": "WARN",
+   "value": "{'benign': 12, 'dos': 3, 'evil_twin': 5, 'fdi': 2, 'replay': 7}"
+  },
+  {
+   "code": "C2",
+   "status": "PASS",
+   "value": "12 of 29 captures"
+  },
+  {
+   "code": "C3",
+   "status": "PASS",
+   "value": "min 2 captures in a class"
+  },
+  {
+   "code": "C4",
+   "status": "FAIL",
+   "value": "index 0.807  (0.8135 on 29-way, chance 0.0345)"
+  },
+  {
+   "code": "C5",
+   "status": "FAIL",
+   "value": "within 0.9331 vs capture-out 0.5618 +/- 0.131 (gap +0.3713)"
+  },
+  {
+   "code": "D1",
+   "status": "FAIL",
+   "value": "random 0.9331 vs contiguous blocks 0.7055 (gap +0.2276)"
+  },
+  {
+   "code": "D2",
+   "status": "PASS",
+   "value": "shallow model 0.5618 +/- 0.131, majority 0.4467"
+  },
+  {
+   "code": "D3",
+   "status": "WARN",
+   "value": "False"
+  },
+  {
+   "code": "E1",
+   "status": "WARN",
+   "value": "shared in segments 0-5 (time of day, no date); offset by about 18,000 s in segments 6-7; absent from the FDI physical block"
+  },
+  {
+   "code": "E2",
+   "status": "FAIL",
+   "value": "worst class 91.9% invented"
+  },
+  {
+   "code": "E3",
+   "status": "FAIL",
+   "value": "gain +0.093, null +0.188, label-free pairing -0.008"
+  }
+ ]
+}

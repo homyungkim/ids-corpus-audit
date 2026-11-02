@@ -1,0 +1,222 @@
+{
+ "hassler:{\"max_records\": 40000}": {
+  "iota_bal": 0.6797621628631868,
+  "iota_acc": 0.8068392857142858,
+  "random_bal": 0.9503075578835783,
+  "loco_bal": 0.4661004981477143,
+  "capture_cost": 0.48420705973586403,
+  "kappa": 2,
+  "rows": 40000,
+  "captures": 29
+ },
+ "hassler:{\"max_records\": 20000}": {
+  "iota_bal": 0.6252054651822384,
+  "iota_acc": 0.7730059523809525,
+  "random_bal": 0.9426110571406889,
+  "loco_bal": 0.4673253601732862,
+  "capture_cost": 0.47528569696740275,
+  "kappa": 2,
+  "rows": 20000,
+  "captures": 29
+ },
+ "hassler:{\"_gap\": 30, \"max_records\": 40000}": {
+  "iota_bal": 0.6336749035869189,
+  "iota_acc": 0.7882612612612612,
+  "random_bal": 0.9503075578835783,
+  "loco_bal": 0.5134291473204889,
+  "capture_cost": 0.4368784105630894,
+  "kappa": 2,
+  "rows": 40000,
+  "captures": 38
+ },
+ "hassler:{\"_gap\": 120, \"max_records\": 40000}": {
+  "iota_bal": 0.7255817364544853,
+  "iota_acc": 0.8199652777777778,
+  "random_bal": 0.9503075578835783,
+  "loco_bal": 0.4663875115613715,
+  "capture_cost": 0.48392004632220686,
+  "kappa": 2,
+  "rows": 40000,
+  "captures": 25
+ },
+ "hassler:{\"_gap\": 300, \"max_records\": 40000}": {
+  "iota_bal": 0.7133416955287585,
+  "iota_acc": 0.8207125000000001,
+  "random_bal": 0.9503075578835783,
+  "loco_bal": 0.4649877641581305,
+  "capture_cost": 0.48531979372544787,
+  "kappa": 2,
+  "rows": 40000,
+  "captures": 21
+ },
+ "mavlink:{\"window\": 128}": {
+  "iota_bal": 0.7104896938353225,
+  "iota_acc": 0.7104531953626522,
+  "random_bal": 0.9997757266262877,
+  "loco_bal": 0.7661636485580148,
+  "capture_cost": 0.2336120780682729,
+  "kappa": 2,
+  "rows": 19880,
+  "captures": 8
+ },
+ "mavlink:{\"window\": 64}": {
+  "iota_bal": 0.6986249045072574,
+  "iota_acc": 0.6986249045072574,
+  "random_bal": 0.9983926620964572,
+  "loco_bal": 0.7959286000802246,
+  "capture_cost": 0.20246406201623257,
+  "kappa": 2,
+  "rows": 19944,
+  "captures": 8
+ },
+ "mavlink:{\"window\": 256}": {
+  "iota_bal": 0.7124818282713019,
+  "iota_acc": 0.7124535943300708,
+  "random_bal": 0.9994747691975934,
+  "loco_bal": 0.7142567841231268,
+  "capture_cost": 0.2852179850744666,
+  "kappa": 2,
+  "rows": 19752,
+  "captures": 8
+ },
+ "mavlink:{\"max_records\": 20000}": {
+  "iota_bal": 0.7104896938353225,
+  "iota_acc": 0.7104531953626522,
+  "random_bal": 0.9997757266262877,
+  "loco_bal": 0.7661636485580148,
+  "capture_cost": 0.2336120780682729,
+  "kappa": 2,
+  "rows": 19880,
+  "captures": 8
+ },
+ "shadow:{\"stride\": 32, \"window\": 64}": {
+  "iota_bal": 0.4986200949144167,
+  "iota_acc": 0.58380365328177,
+  "random_bal": 0.9967603901492113,
+  "loco_bal": 0.9947966201791365,
+  "capture_cost": 0.001963769970074747,
+  "kappa": 14,
+  "rows": 19976,
+  "captures": 35
+ },
+ "shadow:{\"stride\": 16, \"window\": 32}": {
+  "iota_bal": 0.48173823743556315,
+  "iota_acc": 0.5642156862745098,
+  "random_bal": 0.9922862594340988,
+  "loco_bal": 0.9894758728774519,
+  "capture_cost": 0.0028103865566468933,
+  "kappa": 14,
+  "rows": 40000,
+  "captures": 35
+ },
+ "shadow:{\"stride\": 64, \"window\": 128}": {
+  "iota_bal": 0.50436435965143,
+  "iota_acc": 0.5970519355283097,
+  "random_bal": 0.997582696725969,
+  "loco_bal": 0.9967870278053611,
+  "capture_cost": 0.0007956689206078948,
+  "kappa": 14,
+  "rows": 9962,
+  "captures": 35
+ },
+ "shadow:{\"max_records\": 20000}": {
+  "iota_bal": 0.4986200949144167,
+  "iota_acc": 0.58380365328177,
+  "random_bal": 0.9967603901492113,
+  "loco_bal": 0.9947966201791365,
+  "capture_cost": 0.001963769970074747,
+  "kappa": 14,
+  "rows": 19976,
+  "captures": 35
+ },
+ "uavcan:{\"max_records\": 60000}": {
+  "iota_bal": 0.1260842710473942,
+  "iota_acc": 0.13901234567901236,
+  "random_bal": 0.8305083811035902,
+  "loco_bal": 0.8123593955112784,
+  "capture_cost": 0.018148985592311706,
+  "kappa": 10,
+  "rows": 60000,
+  "captures": 10
+ },
+ "uavcan:{\"max_records\": 30000}": {
+  "iota_bal": 0.11337260428370946,
+  "iota_acc": 0.12209876543209877,
+  "random_bal": 0.8318824396767903,
+  "loco_bal": 0.8105884323502506,
+  "capture_cost": 0.021294007326539743,
+  "kappa": 10,
+  "rows": 30000,
+  "captures": 10
+ },
+ "uavcan:{\"max_records\": 120000}": {
+  "iota_bal": 0.13121958353496616,
+  "iota_acc": 0.1429320987654321,
+  "random_bal": 0.8405013129817176,
+  "loco_bal": 0.8225744942783144,
+  "capture_cost": 0.01792681870340318,
+  "kappa": 10,
+  "rows": 120000,
+  "captures": 10
+ },
+ "lumi:{\"max_records\": 60000}": {
+  "iota_bal": 0.08316607890467777,
+  "iota_acc": 0.09586419753086417,
+  "random_bal": 0.8460574565056077,
+  "loco_bal": 0.8432545422687128,
+  "capture_cost": 0.002802914236894938,
+  "kappa": 10,
+  "rows": 60000,
+  "captures": 10
+ },
+ "lumi:{\"max_records\": 30000}": {
+  "iota_bal": 0.07224446430085543,
+  "iota_acc": 0.08370370370370371,
+  "random_bal": 0.8455369174894948,
+  "loco_bal": 0.8435507879956953,
+  "capture_cost": 0.0019861294937995044,
+  "kappa": 10,
+  "rows": 30000,
+  "captures": 10
+ },
+ "lumi:{\"max_records\": 120000}": {
+  "iota_bal": 0.08758860625543173,
+  "iota_acc": 0.09984567901234567,
+  "random_bal": 0.8523463208015482,
+  "loco_bal": 0.8467027484481899,
+  "capture_cost": 0.005643572353358217,
+  "kappa": 10,
+  "rows": 120000,
+  "captures": 10
+ },
+ "hai:{\"max_records\": 60000}": {
+  "iota_bal": 0.9499625968325418,
+  "iota_acc": 0.9603809523809524,
+  "random_bal": 0.8243239676432014,
+  "loco_bal": 0.7353421427614187,
+  "capture_cost": 0.08898182488178263,
+  "kappa": 5,
+  "rows": 60000,
+  "captures": 8
+ },
+ "hai:{\"max_records\": 30000}": {
+  "iota_bal": 0.9531088980560203,
+  "iota_acc": 0.9627936507936508,
+  "random_bal": 0.7872802662207579,
+  "loco_bal": 0.7020624065373495,
+  "capture_cost": 0.08521785968340834,
+  "kappa": 5,
+  "rows": 30000,
+  "captures": 8
+ },
+ "hai:{\"max_records\": 120000}": {
+  "iota_bal": 0.9501358317136458,
+  "iota_acc": 0.9587619047619047,
+  "random_bal": 0.8580465922745368,
+  "loco_bal": 0.7551889812612993,
+  "capture_cost": 0.10285761101323754,
+  "kappa": 5,
+  "rows": 120000,
+  "captures": 8
+ }
+}
