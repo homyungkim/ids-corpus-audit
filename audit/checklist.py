@@ -425,14 +425,14 @@ def E2_pairing_cost(r: Records) -> Result:
 def E3_fusion_null(r: Records) -> Result:
     v = r.views.get("fusion_null")
     if v is None:
-        return Result("E3", "the fusion gain fails its null control", NA)
+        return Result("E3", "the fusion gain survives its null control", NA)
     gain, null = v["gain_paired"], v["gain_null_class"]
     free = v.get("gain_time_pairing")
     survives = null >= 0.5 * gain or (free is not None and free < 0.5 * gain)
     val = f"gain {gain:+.3f}, null {null:+.3f}"
     if free is not None:
         val += f", label-free pairing {free:+.3f}"
-    return Result("E3", "the fusion gain fails its null control",
+    return Result("E3", "the fusion gain survives its null control",
                   FAIL if survives else PASS, val,
                   "The gain appears only when the pairing rule reads the "
                   "label; a pairing that never reads it adds nothing."
